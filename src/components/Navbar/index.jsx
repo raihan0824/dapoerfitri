@@ -38,8 +38,8 @@ const Navbar = ({ navbarInfo }) => {
       </Link>
 
       <ul className={styles.navbar_links}>
-        {navbarItems?.map((item) => (
-          <li className={cn(styles.menu_item,'opensans')}>
+        {navbarItems?.map((item,key) => (
+          <li className={cn(styles.menu_item,'opensans')} key={index}>
             <Link href={`/#${item?.toLowerCase()}`} passHref>
               <a>{item}</a>
             </Link>
@@ -58,8 +58,8 @@ const Navbar = ({ navbarInfo }) => {
           <div className={cn(styles.navbar_smallscreen_overlay, 'slide_bottom', 'flex_center')}>
             <MdOutlineRestaurantMenu className={styles.overlay_close} onClick={handleToggle} />
             <ul className={styles.navbar_smallscreen_links}>
-              {navbarItems?.map((item) => (
-                <li onClick={handleToggle}>
+              {navbarItems?.map((item, index) => (
+                <li onClick={handleToggle} key={index}>
                   <Link href={navbarInfo ? `/#${item?.toLowerCase()}` : '#contact'} passHref>
                     <a>{item}</a>
                   </Link>
