@@ -14,7 +14,6 @@ const Navbar = ({ navbarInfo }) => {
   
   const navbarItems = ['home', 'menu','contact'];
   // const navbarItems = [navbarInfo?.metadata?.about, navbarInfo?.metadata?.contact, navbarInfo?.metadata?.home, navbarInfo?.metadata?.menu];
-  console.log(navbarItems)
 
   const handleToggle = () => {
     setToggleMenu( prev => !prev );
@@ -38,7 +37,7 @@ const Navbar = ({ navbarInfo }) => {
       </Link>
 
       <ul className={styles.navbar_links}>
-        {navbarItems?.map((item,key) => (
+        {navbarItems?.map((item,index) => (
           <li className={cn(styles.menu_item,'opensans')} key={index}>
             <Link href={`/#${item?.toLowerCase()}`} passHref>
               <a>{item}</a>
