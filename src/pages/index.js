@@ -17,7 +17,7 @@ function Template({ data }) {
     <>
       <Head>
         <title>DapoerFitri</title>
-        <meta name="description" content="Create template using cosmic.js CMS" />
+        <meta name="description" content="Catering rumahan BSD" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout 
