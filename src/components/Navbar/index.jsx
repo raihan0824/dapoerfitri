@@ -58,8 +58,8 @@ const Navbar = ({ navbarInfo }) => {
           <div className={cn(styles.navbar_smallscreen_overlay, 'slide_bottom', 'flex_center')}>
             <MdOutlineRestaurantMenu className={styles.overlay_close} onClick={handleToggle} />
             <ul className={styles.navbar_smallscreen_links}>
-              {navbarItems?.map((item, index) => (
-                <li onClick={handleToggle} key={index}>
+              {navbarItems?.map((item) => (
+                <li onClick={handleToggle}>
                   <Link href={navbarInfo ? `/#${item?.toLowerCase()}` : '#contact'} passHref>
                     <a>{item}</a>
                   </Link>
