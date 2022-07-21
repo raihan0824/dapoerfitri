@@ -58,12 +58,13 @@ const Navbar = ({ navbarInfo }) => {
             <MdOutlineRestaurantMenu className={styles.overlay_close} onClick={handleToggle} />
             <ul className={styles.navbar_smallscreen_links}>
               {navbarItems?.map((item, index) => (
-                <li className={cn(styles.menu_item, 'opensans')} key={index}>
+                <li onClick={handleToggle} key={index}>
                   <Link href={`/#${item?.toLowerCase()}`} passHref>
                     <a>{item}</a>
                   </Link>
                 </li>
               ))}
+
             </ul>
             
           </div>
