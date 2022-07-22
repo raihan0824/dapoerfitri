@@ -48,7 +48,7 @@ const Navbar = ({ navbarInfo }) => {
 
       <div className={styles.navbar_login}>
         <p className={cn(styles.menu_item,'opensans')}>
-          <Link href='#contact' passHref>{navbarInfo?.metadata?.action || ''}</Link>
+          <Link href='#contact' passHref>Book table</Link>
         </p>
       </div>
       <div className={styles.navbar_smallscreen}>
