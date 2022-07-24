@@ -18,7 +18,7 @@ function Template({ data }) {
       <Head>
         <title>DapoerFitri</title>
         <meta name="description" content="Catering rumahan BSD" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png" />
       </Head>
       <Layout 
       // navbar={chooseByType(data, 'navigation')}

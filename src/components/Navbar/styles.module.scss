@@ -1,5 +1,26 @@
 @import 'styles/variables';
 
+.button {
+    background-color: $color-black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+
+    &:hover {
+        color: $color-golden;
+        transform: scale(0.98);
+        transition: .3s ease;
+        border-bottom: 2px solid $color-golden;
+    }
+  }
+
 .navbar_container {
     width: 100%;
     display: flex;
@@ -161,3 +182,4 @@
         height: 35px;
     }
 }
+

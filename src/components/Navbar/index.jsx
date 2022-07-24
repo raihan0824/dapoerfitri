@@ -2,6 +2,9 @@ import { useState } from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
+import Popup from 'reactjs-popup';
+import Form from './Form'
+
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
@@ -21,15 +24,6 @@ const Navbar = ({ navbarInfo }) => {
   
   return (
     <nav className={styles.navbar_container} id='navigation'>
-      {/* <Link href='/#home' passHref>
-        <div className={styles.navbar_logo}>
-          <Image
-            src={navbarInfo?.metadata?.logo?.imgix_url || images?.gericht}
-            layout='fill'
-            objectFit='cover'
-            alt='logo' />
-        </div>
-      </Link> */}
       <Link href='/#home' passHref>
         <div className={styles.navbar_logo}>
         DapoerFitri 
@@ -48,9 +42,12 @@ const Navbar = ({ navbarInfo }) => {
 
       <div className={styles.navbar_login}>
         <p className={cn(styles.menu_item,'opensans')}>
-          <Link href='#contact' passHref>Book table</Link>
+          <Popup trigger={<button className={styles.button}> Book table </button>}>
+              <Form/>
+          </Popup>
         </p>
       </div>
+      
       <div className={styles.navbar_smallscreen}>
         <GiHamburgerMenu className={styles.navbar_hamburger} onClick={handleToggle} />
         {toggleMenu && (
