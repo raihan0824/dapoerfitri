@@ -47,13 +47,13 @@ const Navbar = ({ navbarInfo }) => {
       </div>
       
       <div>
-            <button className={styles.button} onClick={() => setShowModal(true)}>Order Now!</button>
-            {showModal && <Form
-                onClose={() => setShowModal(false)}
-                show={showModal}
-            >
-            </Form>}
-        </div>
+        <button className={styles.button} onClick={() => setShowModal(true)}>Order Now!</button>
+        {showModal && <Form
+          onClose={() => setShowModal(false)}
+          show={showModal}
+        >
+        </Form>}
+      </div>
 
       <div className={styles.navbar_smallscreen}>
         <GiHamburgerMenu className={styles.navbar_hamburger} onClick={handleToggle} />
