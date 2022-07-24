@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
-import styled from "styled-components";
-import Form from './Form'
 import styles from './styles.module.scss'
 import Head from "next/head";
 
