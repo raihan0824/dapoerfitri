@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
-import Image from 'next/image';
-import Popup from 'reactjs-popup';
 import Form from './Form'
 
 
@@ -18,10 +16,12 @@ const Navbar = ({ navbarInfo }) => {
   const navbarItems = ['home', 'menu','contact'];
   // const navbarItems = [navbarInfo?.metadata?.about, navbarInfo?.metadata?.contact, navbarInfo?.metadata?.home, navbarInfo?.metadata?.menu];
 
+  const [showModal, setShowModal] = useState(false);
+
   const handleToggle = () => {
     setToggleMenu( prev => !prev );
   };
-  
+
   return (
     <nav className={styles.navbar_container} id='navigation'>
       <Link href='/#home' passHref>
@@ -42,12 +42,19 @@ const Navbar = ({ navbarInfo }) => {
 
       <div className={styles.navbar_login}>
         <p className={cn(styles.menu_item,'opensans')}>
-          <Popup trigger={<button className={styles.button}> Book table </button>}>
-              <Form/>
-          </Popup>
+
         </p>
       </div>
       
+      <div>
+            <button className={styles.button} onClick={() => setShowModal(true)}>Order Now!</button>
+            {showModal && <Form
+                onClose={() => setShowModal(false)}
+                show={showModal}
+            >
+            </Form>}
+        </div>
+
       <div className={styles.navbar_smallscreen}>
         <GiHamburgerMenu className={styles.navbar_hamburger} onClick={handleToggle} />
         {toggleMenu && (
