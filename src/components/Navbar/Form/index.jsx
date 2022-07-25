@@ -64,7 +64,7 @@ const Modal = ({ onClose, children, title }) => {
                                 />
                             </div>
                         </form>
-
+                        {/* For Mobile */}
                         <form className={styles.form_mobile}>
                             <img className={styles.close} src="https://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-cross-icon.png" onClick={() => div_hide()} />
                             <h2>Order now!</h2>
