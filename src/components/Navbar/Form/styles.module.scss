@@ -30,7 +30,7 @@ font-family:'Raleway',sans-serif
 
 .popupContactMobile {
     position:absolute;
-    left:70%;
+    left:80%;
     top:17%;
     margin-left:-280px;
     font-family:'Raleway',sans-serif
@@ -58,13 +58,13 @@ background-color:#fff;
 
 
 
-.popupContactMobile {display:none;}
-.popupContact {display:display;}
+// .popupContactMobile {display:none;}
+// .popupContact {display:display;}
 
-@media (max-width : 1150px) {
-    .popupContactMobile {display:block;}
-    .popupContact {display:none;}
-}
+// @media (max-width : 1150px) {
+//     .popupContactMobile {display:block;}
+//     .popupContact {display:none;}
+// }
 
 
 .p {
