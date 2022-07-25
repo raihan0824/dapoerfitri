@@ -43,7 +43,7 @@ const Modal = ({ onClose, children, title }) => {
                             <hr />
 
                             <input id="wa_name" className={styles.wa_name} name="name" placeholder="Name" type="text" />
-                            <textarea id="wa_textarea" className={styles.wa_textarea} name="message" placeholder="Alamat"></textarea>
+                            <textarea id="wa_textarea" className={styles.wa_textarea} name="address" placeholder="Alamat"></textarea>
 
                             <div className={styles.datainput}>
                                 <select id="wa_select" className={styles.wa_select}>
