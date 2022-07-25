@@ -19,6 +19,7 @@ right:-15px;
 top:-10px;
 cursor:pointer
 }
+
 .popupContact {
 position:absolute;
 left:50%;
@@ -26,6 +27,15 @@ top:17%;
 margin-left:-280px;
 font-family:'Raleway',sans-serif
 }
+
+.popupContactMobile {
+    position:absolute;
+    left:70%;
+    top:17%;
+    margin-left:-280px;
+    font-family:'Raleway',sans-serif
+    }
+
 .form {
 // max-width:300px;
 // min-width:250px;
@@ -46,12 +56,14 @@ background-color:#fff;
     background-color:#fff;
     }
 
-.form_mobile {display:none;}
-.form {display:display;}
 
-@media (max-width : 600px) {
-    .form_mobile {display:block;}
-    .form {display:none;}
+
+.popupContactMobile {display:none;}
+.popupContact {display:display;}
+
+@media (max-width : 1150px) {
+    .popupContactMobile {display:block;}
+    .popupContact {display:none;}
 }
 
 
