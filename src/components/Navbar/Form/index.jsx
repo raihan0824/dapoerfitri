@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from './styles.module.scss'
 import Head from "next/head";
 import styled from "styled-components";
+import {isMobile} from 'react-device-detect';
 
 const Modal = ({ onClose, children, title }) => {
     const [isBrowser, setIsBrowser] = useState(false);
@@ -65,8 +66,20 @@ const Modal = ({ onClose, children, title }) => {
                                 </div>
                             </form>
                         </StyledModalWrapper>
-                    </div> 
+                    </div>    
+                </div>        
+            </body>
+            <Head>
+                <script async src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+                <script async type="text/javascript" src="js/script.js"></script>
+            </Head>   
+        </main>
+    )
 
+    const modalContentmobile = (
+        <main>
+            <body id='body'>
+                <div className={styles.abc} id='abc'>
                     <div className={styles.popupContactMobile}>
                         <StyledModalWrapper ref={modalWrapperRef}>
                             <form className={styles.form_mobile}>
@@ -97,21 +110,26 @@ const Modal = ({ onClose, children, title }) => {
                                 </div>
                             </form>
                         </StyledModalWrapper>
-                    </div>    
-
-                </div>        
+                    </div>
+                </div>
             </body>
             <Head>
                 <script async src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
                 <script async type="text/javascript" src="js/script.js"></script>
-            </Head>   
+            </Head>
         </main>
     )
 
-    return modalContent
+        if(isMobile) {
+            return (
+                modalContentmobile
+            )
+        }
+        return (
+            modalContent
+        );
 };
 const StyledModalWrapper = styled.div`
-
 `;
 
 export default Modal
