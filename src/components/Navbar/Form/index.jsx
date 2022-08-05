@@ -39,7 +39,10 @@ const Modal = ({ onClose, children, title }) => {
                     <div className={styles.popupContact}>
                         <StyledModalWrapper ref={modalWrapperRef}>
                             <form className={styles.form}>
-                                <img className={styles.close} src="https://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-cross-icon.png" onClick={() => div_hide()} />
+                                {/* <img className={styles.close} src='../../../assets/yellow-cross-icon.png' onClick={() => div_hide()} /> */}
+                                <a className={styles.close} onClick={() => div_hide()} >
+                                    X
+                                    </a>
                                 <h2>Order now!</h2>
                                 <hr />
 
@@ -83,7 +86,10 @@ const Modal = ({ onClose, children, title }) => {
                     <div className={styles.popupContactMobile}>
                         <StyledModalWrapper ref={modalWrapperRef}>
                             <form className={styles.form_mobile}>
-                                <img className={styles.close} src="https://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-cross-icon.png" onClick={() => div_hide()} />
+                                {/* <img className={styles.close} src='../../../assets/yellow-cross-icon.png'  onClick={() => div_hide()} /> */}
+                                <a onClick={() => div_hide()} >
+                                    X
+                                    </a>
                                 <h2>Order now!</h2>
                                 <hr />
 

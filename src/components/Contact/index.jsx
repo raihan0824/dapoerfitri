@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import cn from 'classnames';
-
+import foodpic from '../../assets/food2.png'
 import SubHeading from 'components/SubHeading';
 import SocialMedia from 'components/Contact/SocialMedia';
 
@@ -28,7 +28,7 @@ const Contacts = ({ info }) => (
       <div className='app_wrapper_img'>
         <div className={cn(styles.wrapper_img, 'img_padding')} >
           <Image
-            src='https://nextjs-restaurant-website-cms.vercel.app/_next/image?url=https%3A%2F%2Fimgix.cosmicjs.com%2F4b45b3b0-b73d-11ec-a642-7195085ee56f-laurels.png&w=1080&q=75'
+            src={foodpic}
             alt='find_us_img'
             objectFit='contain'
             width={500}

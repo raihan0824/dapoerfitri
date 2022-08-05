@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import cn from 'classnames';
-
+import foodpic from '../../assets/food.jpg'
 import SubHeading from 'components/SubHeading';
 import Button from 'components/Button';
 
@@ -19,7 +19,7 @@ const Home = ( { info } ) => (
           <div className={cn(styles.wrapper_img, 'img_padding')} >
             <Image
               // src='https://www.goodnewsfromindonesia.id/uploads/post/large-nasitum-8ef4c140b4991c64815fd6c9697d4855.jpg'
-              src='https://nextjs-restaurant-website-cms.vercel.app/_next/image?url=https%3A%2F%2Fimgix.cosmicjs.com%2F0a0636f0-b732-11ec-a642-7195085ee56f-headerimg.jpg&w=1080&q=75'
+              src={foodpic}
               alt='header_img'
               objectFit='cover'
               width={450}

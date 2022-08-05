@@ -4,7 +4,7 @@ import cn from 'classnames';
 import SubHeading from 'components/SubHeading';
 import MenuItem from 'components/Menu/Menuitem';
 import Button from 'components/Button';
-
+import knifepic from '../../assets/knife.png'
 import chooseByType from 'utils/chooseValueByType';
 
 import styles from './styles.module.scss';
@@ -40,7 +40,7 @@ const SpacialMenu = ({ info }) => {
         </div>
       </div>
       <div className={styles.special_menu_img}>
-        <Image src='https://nextjs-restaurant-website-cms.vercel.app/_next/image?url=https%3A%2F%2Fimgix.cosmicjs.com%2F3a51a2a0-b709-11ec-a642-7195085ee56f-knife.png&w=3840&q=75' objectFit='contain' layout='fill' alt='menu_img' />
+        <Image src={knifepic} objectFit='contain' layout='fill' alt='menu_img' />
       </div>
        <div className={cn(styles.special_menu_cocktails,  'flex_center')}>
         <p className={styles.special_menu_heading}>Tumpeng</p>
