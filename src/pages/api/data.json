@@ -1,0 +1,338 @@
+[
+    {
+        "slug": "sushi",
+        "title": "Sushi",
+        "created_at": "2022-04-12T15:54:02.413Z",
+        "metadata": {
+            "title": "Sushi",
+            "video": {
+                "url": "https://cdn.cosmicjs.com/c3e0bc50-ba78-11ec-a7cc-25c8f0ace24d-pexels-kampus-production-7571885.mp4",
+                "imgix_url": "https://cdn.cosmicjs.com/c3e0bc50-ba78-11ec-a7cc-25c8f0ace24d-pexels-kampus-production-7571885.mp4"
+            }
+        }
+    },
+    {
+        "slug": "gallery",
+        "title": "Gallery",
+        "created_at": "2022-04-10T17:04:12.406Z",
+        "metadata": {
+            "section": "Choose your favorite dish",
+            "title": "Menu Gallery",
+            "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.",
+            "picture": {
+                "url": null,
+                "imgix_url": null
+            },
+            "details": []
+        }
+    },
+    {
+        "slug": "drink",
+        "title": "Drink",
+        "created_at": "2022-04-09T21:25:26.657Z",
+        "metadata": {
+            "section": [
+                {
+                    "id": "62d8c8c560f5290e6772782a",
+                    "bucket": "62d8c8c4a4f76800094f761d",
+                    "slug": "menu",
+                    "title": "Menu",
+                    "content": "",
+                    "created": "2022-04-08T10:50:27.519Z",
+                    "created_at": "2022-04-08T10:50:27.519Z",
+                    "modified_at": "2022-07-21T03:32:21.445Z",
+                    "status": "published",
+                    "published_at": "2022-04-09T21:43:05.851Z",
+                    "thumbnail": "https://imgix.cosmicjs.com/4b45b3b0-b73d-11ec-a642-7195085ee56f-laurels.png",
+                    "type": "sections",
+                    "metadata": {
+                        "section": "Menu That Fits Your Palatte",
+                        "title": "Today's Special",
+                        "picture": {
+                            "url": "https://cdn.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png",
+                            "imgix_url": "https://imgix.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png"
+                        },
+                        "intro": "",
+                        "details": []
+                    }
+                }
+            ],
+            "title": "Breakfast Menu",
+            "menu": [
+                {
+                    "title": "Nasi Goreng",
+                    "slug": "nasgor",
+                    "price": "Rp25k",
+                    "tags": "",
+                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                        "imgix_url": "nasgor.jpg"
+                    }
+                },
+                {
+                    "title": "Nasi Kuning",
+                    "slug": "naskun",
+                    "price": "Rp25k",
+                    "tags": "",
+                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png",
+                        "imgix_url": "naskun.jpg"
+                    }
+                },
+                {
+                    "title": "Nasi Kebuli",
+                    "slug": "nasbul",
+                    "price": "Rp25k",
+                    "tags": "",
+                    "intro": "Lorem Ipsum DLorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .olor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                        "imgix_url": "nasbul.jpeg"
+                    }
+                },
+                {
+                    "title": "Nasi Uduk",
+                    "slug": "nasduk",
+                    "price": "Rp20k",
+                    "tags": "",
+                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                        "imgix_url": "nasduk.jpg"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "slug": "food",
+        "title": "Food",
+        "created_at": "2022-04-09T21:16:59.615Z",
+        "metadata": {
+            "section": [
+                {
+                    "id": "62d8c8c560f5290e6772782a",
+                    "bucket": "62d8c8c4a4f76800094f761d",
+                    "slug": "menu",
+                    "title": "Menu",
+                    "content": "",
+                    "created": "2022-04-08T10:50:27.519Z",
+                    "created_at": "2022-04-08T10:50:27.519Z",
+                    "modified_at": "2022-07-21T03:32:21.445Z",
+                    "status": "published",
+                    "published_at": "2022-04-09T21:43:05.851Z",
+                    "thumbnail": "https://imgix.cosmicjs.com/4b45b3b0-b73d-11ec-a642-7195085ee56f-laurels.png",
+                    "type": "sections",
+                    "metadata": {
+                        "section": "Menu That Fits Your Palatte",
+                        "title": "Today's Special",
+                        "picture": {
+                            "url": "https://cdn.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png",
+                            "imgix_url": "https://imgix.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png"
+                        },
+                        "intro": "",
+                        "details": []
+                    }
+                },
+                {
+                    "id": "62d8c8c560f5290e67727831",
+                    "bucket": "62d8c8c4a4f76800094f761d",
+                    "slug": "gallery",
+                    "title": "Gallery",
+                    "content": "",
+                    "created": "2022-04-10T17:04:12.406Z",
+                    "created_at": "2022-04-10T17:04:12.406Z",
+                    "modified_at": "2022-07-21T03:32:21.445Z",
+                    "status": "published",
+                    "published_at": "2022-04-10T17:05:31.025Z",
+                    "thumbnail": "https://imgix.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                    "type": "sections",
+                    "metadata": {
+                        "section": "Choose your favorite dish",
+                        "title": "Menu Gallery",
+                        "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.",
+                        "picture": {
+                            "url": null,
+                            "imgix_url": null
+                        },
+                        "details": []
+                    }
+                }
+            ],
+            "title": "Special Menu",
+            "menu": [
+                {
+                    "title": "Nasi Liwet",
+                    "slug": "liwet",
+                    "price": "Rp20k",
+                    "tags": "",
+                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et.",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/a818dda0-b73e-11ec-a642-7195085ee56f-gallery01.png",
+                        "imgix_url": "nasiliwet.png"
+                    }
+                },
+                {
+                    "title": "Mie Titi",
+                    "slug": "titi",
+                    "price": "Rp50k",
+                    "tags": "",
+                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et..",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/c4cfa280-b73e-11ec-a642-7195085ee56f-gallery02.png",
+                        "imgix_url": "mititi.jpg"
+                    }
+                },
+                {
+                    "title": "Laksa Singapore",
+                    "slug": "laksa",
+                    "price": "Rp50k",
+                    "tags": "",
+                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et.",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/e114b9d0-b73e-11ec-a642-7195085ee56f-gallery04.png",
+                        "imgix_url": "laksa.jpg"
+                    }
+                },
+                {
+                    "title": "Ayam Bakar",
+                    "slug": "ayam",
+                    "price": "Rp30k",
+                    "tags": "",
+                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et.",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                        "imgix_url": "ayambakar.jpg"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "slug": "video",
+        "title": "Intro Video ",
+        "created_at": "2022-04-08T13:46:25.649Z",
+        "metadata": {
+            "title": "video intro",
+            "video": {
+                "url": "https://cdn.cosmicjs.com/33d4c770-b742-11ec-a642-7195085ee56f-meal.mp4",
+                "imgix_url": "https://cdn.cosmicjs.com/33d4c770-b742-11ec-a642-7195085ee56f-meal.mp4"
+            }
+        }
+    },
+    {
+        "slug": "contact",
+        "title": "Contact",
+        "created_at": "2022-04-08T13:12:06.844Z",
+        "metadata": {
+            "section": "Contact",
+            "title": "Contact US",
+            "intro": "+123 554 4568",
+            "picture": {
+                "url": "https://cdn.cosmicjs.com/4b45b3b0-b73d-11ec-a642-7195085ee56f-laurels.png",
+                "imgix_url": "https://imgix.cosmicjs.com/4b45b3b0-b73d-11ec-a642-7195085ee56f-laurels.png"
+            },
+            "details": [
+                {
+                    "title": "Opening Hours",
+                    "intro": "Mon - Fri: 10:00 Am - 02:00 Am\nSat - Sun: 10:00 Am - 03:00 Am",
+                    "picture": {
+                        "url": null,
+                        "imgix_url": null
+                    }
+                },
+                {
+                    "title": "Find Us",
+                    "intro": "Address: 9 W 53rd St, New York, NY 10019, USA",
+                    "picture": {
+                        "url": null,
+                        "imgix_url": null
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "slug": "history",
+        "title": "History",
+        "created_at": "2022-04-08T11:56:55.134Z",
+        "metadata": {
+            "section": "Chef's Word",
+            "title": "What We Believe In",
+            "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .  Auctor Sit Iaculis In Arcu. Vulputate Nulla Lobortis Mauris Eget Sit. Nulla Scelerisque Scelerisque Congue Ac Consequat, Aliquam Molestie Lectus Eu. Congue Iaculis Integer Curabitur Semper Sit Nunc.",
+            "picture": {
+                "url": "https://cdn.cosmicjs.com/f8663b60-b732-11ec-a642-7195085ee56f-chef.png",
+                "imgix_url": "https://imgix.cosmicjs.com/f8663b60-b732-11ec-a642-7195085ee56f-chef.png"
+            },
+            "sub_intro": "Kevin Luo ",
+            "details": []
+        }
+    },
+    {
+        "slug": "header",
+        "title": "Header ",
+        "created_at": "2022-04-08T11:51:17.251Z",
+        "metadata": {
+            "section": "Chase The New Flavour",
+            "title": "The Key To Fine Dinig",
+            "intro": "The New Dining amazing just try it!",
+            "picture": {
+                "url": "https://cdn.cosmicjs.com/0a0636f0-b732-11ec-a642-7195085ee56f-headerimg.jpg",
+                "imgix_url": "https://imgix.cosmicjs.com/0a0636f0-b732-11ec-a642-7195085ee56f-headerimg.jpg"
+            },
+            "details": []
+        }
+    },
+    {
+        "slug": "menu",
+        "title": "Menu",
+        "created_at": "2022-04-08T10:50:27.519Z",
+        "metadata": {
+            "section": "Menu That Fits Your Palatte",
+            "title": "Today's Special",
+            "picture": {
+                "url": "https://cdn.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png",
+                "imgix_url": "https://imgix.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png"
+            },
+            "intro": "",
+            "details": []
+        }
+    },
+    {
+        "slug": "about",
+        "title": "About",
+        "created_at": "2022-04-08T07:05:13.929Z",
+        "metadata": {
+            "about": "About Us",
+            "about_intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.",
+            "title": "Our History",
+            "title_intro": "Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.",
+            "picture": {
+                "url": "https://cdn.cosmicjs.com/3a51a2a0-b709-11ec-a642-7195085ee56f-knife.png",
+                "imgix_url": "https://imgix.cosmicjs.com/3a51a2a0-b709-11ec-a642-7195085ee56f-knife.png"
+            },
+            "initials": {
+                "url": "https://cdn.cosmicjs.com/e38d9c20-b709-11ec-a642-7195085ee56f-G.png",
+                "imgix_url": "https://imgix.cosmicjs.com/e38d9c20-b709-11ec-a642-7195085ee56f-G.png"
+            }
+        }
+    },
+    {
+        "slug": "navigation",
+        "title": "navigation",
+        "created_at": "2022-04-07T20:10:48.149Z",
+        "metadata": {
+            "logo": {
+                "url": "https://cdn.cosmicjs.com/595ffb70-b6ae-11ec-a642-7195085ee56f-gericht.png",
+                "imgix_url": "https://imgix.cosmicjs.com/595ffb70-b6ae-11ec-a642-7195085ee56f-gericht.png"
+            },
+            "home": "Home",
+            "about": "About",
+            "menu": "Menu",
+            "contact": "Contact",
+            "action": "Book Table"
+        }
+    }
+]

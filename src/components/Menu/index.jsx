@@ -10,8 +10,8 @@ import chooseByType from 'utils/chooseValueByType';
 import styles from './styles.module.scss';
 
 const SpacialMenu = ({ info }) => {
-  // const food = chooseByType(info, 'food');
-  // const drink = chooseByType(info, 'drink');
+  const food = chooseByType(info, 'food');
+  const drink = chooseByType(info, 'drink');
 
   return (
     <div className={cn(styles.special, 'flex_center', 'section_padding')} id='menu'>
@@ -21,14 +21,9 @@ const SpacialMenu = ({ info }) => {
       </div>
       <div className={styles.special_menu}>
       <div className={cn(styles.special_menu_wine,  'flex_center')}>
-          <p className={styles.special_menu_heading}>Catering</p>
+          <p className={styles.special_menu_heading}>{food?.metadata?.title}</p>
           <div className={styles.special_menu_items}>
-          {[{"title":"Senin","price":"20k","tags":"rendang"},
-            {"title":"Selasa","price":"20k","tags":"rendang"},
-            {"title":"Rabu","price":"20k","tags":"rendang"},
-            {"title":"Kamis","price":"20k","tags":"rendang"},
-            {"title":"Jumat","price":"20k","tags":"rendang"},
-            ].map(({title, slug, price, tags}) => (
+          {food?.metadata?.menu?.map(({title, slug, price, tags}) => (
             <div className={styles.menu_item_wrapper} key={slug}>
               <Link href={info ? `/menu/${slug}?#menu-intro` : '/#menu'} passHref>
                 <a>
@@ -43,12 +38,9 @@ const SpacialMenu = ({ info }) => {
         <Image src={knifepic} objectFit='contain' layout='fill' alt='menu_img' />
       </div>
        <div className={cn(styles.special_menu_cocktails,  'flex_center')}>
-        <p className={styles.special_menu_heading}>Tumpeng</p>
+        <p className={styles.special_menu_heading}>{drink?.metadata?.title}</p>
         <div className={styles.special_menu_items}>
-          {[
-            {"title":"Nasi Kuning","price":"150k"}
-          ]
-          .map(({title, slug, price, tags}) => (
+          {drink?.metadata?.menu?.map(({title, slug, price, tags}) => (
             <div key={slug}>
               <Link href={info ? `/menu/${slug}?#menu-intro` : '/#menu'} passHref>
                 <a>

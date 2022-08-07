@@ -6,7 +6,8 @@ const nextConfig = {
         formats: ['image/avif', 'image/webp'],
         domains: [
           'www.goodnewsfromindonesia.id',
-          'nextjs-restaurant-website-cms.vercel.app'
+          'nextjs-restaurant-website-cms.vercel.app',
+          'imgix.cosmicjs.com'
         ],
     },
 }

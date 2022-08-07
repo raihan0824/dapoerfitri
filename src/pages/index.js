@@ -8,11 +8,11 @@ import Introduction from 'components/Introduction';
 import VideoIntro from 'components/VideoIntro';
 import Gallery from 'components/Gallery';
 import Contacts from 'components/Contact';
+import data_json from './api/data.json'
+import chooseByType from 'utils/chooseValueByType';
 
-// import { getDataFromBucket } from 'lib/api';
-// import chooseByType from 'utils/chooseValueByType';
-
-function Template({ data }) {
+function Template() {
+  const data=data_json
   return (
     <>
       <Head>
@@ -28,7 +28,7 @@ function Template({ data }) {
         />
         {/* <AboutUs info={chooseByType(data, 'about')}/> */}
         <SpacialMenu 
-        // info={[chooseByType(data, 'drink'), chooseByType(data, 'food')]}
+        info={[chooseByType(data, 'drink'), chooseByType(data, 'food')]}
         />
         {/* <Introduction info={chooseByType(data, 'history')}/> */}
         {/* <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'food')]}/> */}
