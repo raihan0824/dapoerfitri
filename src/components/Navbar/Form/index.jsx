@@ -3,13 +3,21 @@ import styles from './styles.module.scss'
 import Head from "next/head";
 import styled from "styled-components";
 import {isMobile} from 'react-device-detect';
-import crossicon from '../../../assets/yellow-cross-icon.png'
+import chooseByType from 'utils/chooseValueByType';
 
-const Modal = ({ onClose, children, title }) => {
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+
+
+const Form = ({ info,onClose, children, title }) => {
     const [isBrowser, setIsBrowser] = useState(false);
-
     // create ref for the StyledModalWrapper component
     const modalWrapperRef = React.useRef();
+
+    const [active, setActive] = React.useState(0);
 
     // check if the user has clickedinside or outside the modal
     const backDropHandler = e => {
@@ -17,6 +25,26 @@ const Modal = ({ onClose, children, title }) => {
             onClose();
         }
     }
+
+    // Get data from API
+    const special_menu = chooseByType(info, 'food');
+    const breakfast_menu = chooseByType(info, 'drink');
+
+    // Create a list of menu items from API 
+    var special_menu_list=[]
+    for (var i = 0; i <= special_menu?.metadata?.menu.length-1; i++) {
+        special_menu_list.push(special_menu?.metadata?.menu[i].title);
+        }
+    
+    var breakfast_menu_list = []
+    for (var i = 0; i <= breakfast_menu?.metadata?.menu.length - 1; i++) {
+        breakfast_menu_list.push(breakfast_menu?.metadata?.menu[i].title);
+    }
+
+    const [showhide, setShowhide]=useState('');
+    const handleshowhide=(event)=>{
+      const getuser = event.target.value;    
+      setShowhide(getuser);}
 
     useEffect(() => {
         setIsBrowser(true);
@@ -48,12 +76,36 @@ const Modal = ({ onClose, children, title }) => {
                                 <textarea id="wa_textarea" className={styles.wa_textarea} name="address" placeholder="Alamat"></textarea>
 
                                 <div className={styles.datainput}>
-                                    <select id="wa_select" className={styles.wa_select}>
-                                        <option hidden='hidden' defaultValue='default'>Pilih Menu</option>
-                                        <option defaultValue="1">Menu 1</option>
-                                        <option defaultValue="2">Menu 2</option>
-                                        <option defaultValue="3">Menu 3</option>
+                                    <select required id="wa_select" className={styles.wa_select} onChange={(e)=>(handleshowhide(e))}>
+                                        <option hidden='hidden' disabled selected>Pilih Menu</option>
+                                        <option value="1">Special Menu</option>
+                                        <option value="2">Breakfast Menu</option>
                                     </select>
+                 
+                                    {showhide==='1' && (
+                                            <div>
+                                                <div style={{margin:"10px"}}/>
+                                                {special_menu_list?.map((menu, index) => (
+                                                    <ul>
+                                                    <input value={menu} name="radio" type="radio" className={styles.radio_class}/>
+                                                    {menu}
+                                                    </ul>
+                                                ))}                                                       
+                                            </div> 
+                                        )}  
+
+                                    {showhide === '2' && (
+                                        <div>
+                                            <div style={{ margin: "10px" }} />
+                                            {breakfast_menu_list?.map((menu, index) => (
+                                                <ul>
+                                                    <input value={menu} name="radio" type="radio" className={styles.radio_class} />
+                                                    {menu}
+                                                </ul>
+                                            ))}
+                                        </div>
+                                    )}     
+                                    
                                 </div>
 
                                 <div>
@@ -92,12 +144,36 @@ const Modal = ({ onClose, children, title }) => {
                                 <textarea id="wa_textarea" className={styles.wa_textarea} name="address" placeholder="Alamat"></textarea>
 
                                 <div className={styles.datainput}>
-                                    <select id="wa_select" className={styles.wa_select}>
-                                        <option hidden='hidden' defaultValue='default'>Pilih Menu</option>
-                                        <option defaultValue="1">Menu 1</option>
-                                        <option defaultValue="2">Menu 2</option>
-                                        <option defaultValue="3">Menu 3</option>
+                                    <select required id="wa_select" className={styles.wa_select} onChange={(e)=>(handleshowhide(e))}>
+                                        <option hidden='hidden' disabled selected>Pilih Menu</option>
+                                        <option value="1">Special Menu</option>
+                                        <option value="2">Breakfast Menu</option>
                                     </select>
+                 
+                                    {showhide==='1' && (
+                                            <div>
+                                                <div style={{margin:"10px"}}/>
+                                                {special_menu_list?.map((menu, index) => (
+                                                    <ul>
+                                                    <input value={menu} name="radio" type="radio" className={styles.radio_class}/>
+                                                    {menu}
+                                                    </ul>
+                                                ))}                                                       
+                                            </div> 
+                                        )}  
+
+                                    {showhide === '2' && (
+                                        <div>
+                                            <div style={{ margin: "10px" }} />
+                                            {breakfast_menu_list?.map((menu, index) => (
+                                                <ul>
+                                                    <input value={menu} name="radio" type="radio" className={styles.radio_class} />
+                                                    {menu}
+                                                </ul>
+                                            ))}
+                                        </div>
+                                    )}    
+                                    
                                 </div>
 
                                 <div>
@@ -133,4 +209,4 @@ const Modal = ({ onClose, children, title }) => {
 const StyledModalWrapper = styled.div`
 `;
 
-export default Modal
+export default Form

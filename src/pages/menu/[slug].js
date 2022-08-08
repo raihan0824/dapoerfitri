@@ -24,7 +24,7 @@ function Menu({ data }) {
         <meta name="description" content="Catering rumahan BSD" />
         <link rel="icon" href="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png" />
       </Head>
-      <Layout>
+      <Layout navbar={[chooseByType(data, 'drink'), chooseByType(data, 'food')]}>
         <MenuIntro 
         info={[chooseByType(data, 'food'), chooseByType(data, 'drink')]} 
         slug={slug} />

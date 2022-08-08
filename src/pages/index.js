@@ -21,7 +21,7 @@ function Template() {
         <link rel="icon" href="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png" />
       </Head>
       <Layout 
-      // navbar={chooseByType(data, 'navigation')}
+      navbar={[chooseByType(data, 'drink'), chooseByType(data, 'food')]}
       >
         <Home 
         // info={chooseByType(data, 'header')}

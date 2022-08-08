@@ -1,18 +1,16 @@
 import { useState } from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
-import Form from './Form'
-
+import Form from './Form';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdOutlineRestaurantMenu } from 'react-icons/md';
-import images from 'constants/images';
 
 import styles from './styles.module.scss';
 
 const Navbar = ({ navbarInfo }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  
+
   const navbarItems = ['home', 'menu','contact'];
   // const navbarItems = [navbarInfo?.metadata?.about, navbarInfo?.metadata?.contact, navbarInfo?.metadata?.home, navbarInfo?.metadata?.menu];
 
@@ -48,11 +46,13 @@ const Navbar = ({ navbarInfo }) => {
       
       <div>
         <button className={styles.button} onClick={() => setShowModal(true)}>Order Now!</button>
-        {showModal && <Form
+        {showModal && <Form info={navbarInfo}
           onClose={() => setShowModal(false)}
           show={showModal}
         >
         </Form>}
+
+
       </div>
 
       <div className={styles.navbar_smallscreen}>

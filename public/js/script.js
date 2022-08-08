@@ -17,13 +17,14 @@ function gotowhatsapp () {
     // if ("" != input_blanter.value) {
 
         /* Call Input Form */
-        var input_select1 = $("#wa_select :selected").text(),
+        var 
+            // input_select1 = $("#wa_select :selected").text(),
+            input_select1 = $("input[type='radio'][name='radio']:checked").val(),
             input_name1 = $("#wa_name").val(),
             input_email1 = $("#wa_email").val(),
             input_number1 = $("#wa_number").val(),
             input_url1 = $("#wa_url").val(),
             input_textarea1 = $("#wa_textarea").val();
-        console.log(input_name1)
 
         /* Final Whatsapp URL */
         var blanter_whatsapp = walink + '?phone=' + phone + '&text=' + walink2 + '%0A%0A' +
