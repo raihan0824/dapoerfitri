@@ -5,12 +5,6 @@ import styled from "styled-components";
 import {isMobile} from 'react-device-detect';
 import chooseByType from 'utils/chooseValueByType';
 
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
-
 
 const Form = ({ info,onClose, children, title }) => {
     const [isBrowser, setIsBrowser] = useState(false);
@@ -85,8 +79,8 @@ const Form = ({ info,onClose, children, title }) => {
                                     {showhide==='1' && (
                                             <div>
                                                 <div style={{margin:"10px"}}/>
-                                                {special_menu_list?.map((menu, index) => (
-                                                    <ul>
+                                                {special_menu_list?.map(menu => (
+                                                    <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class}/>
                                                     {menu}
                                                     </ul>
@@ -97,8 +91,8 @@ const Form = ({ info,onClose, children, title }) => {
                                     {showhide === '2' && (
                                         <div>
                                             <div style={{ margin: "10px" }} />
-                                            {breakfast_menu_list?.map((menu, index) => (
-                                                <ul>
+                                            {breakfast_menu_list?.map(menu => (
+                                                <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class} />
                                                     {menu}
                                                 </ul>
@@ -153,8 +147,8 @@ const Form = ({ info,onClose, children, title }) => {
                                     {showhide==='1' && (
                                             <div>
                                                 <div style={{margin:"10px"}}/>
-                                                {special_menu_list?.map((menu, index) => (
-                                                    <ul>
+                                                {special_menu_list?.map(menu => (
+                                                    <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class}/>
                                                     {menu}
                                                     </ul>
@@ -165,15 +159,15 @@ const Form = ({ info,onClose, children, title }) => {
                                     {showhide === '2' && (
                                         <div>
                                             <div style={{ margin: "10px" }} />
-                                            {breakfast_menu_list?.map((menu, index) => (
-                                                <ul>
+                                            {breakfast_menu_list?.map(menu => (
+                                                <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class} />
                                                     {menu}
                                                 </ul>
                                             ))}
                                         </div>
                                     )}    
-                                    
+
                                 </div>
 
                                 <div>
