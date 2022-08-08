@@ -4,7 +4,7 @@ function gotowhatsapp () {
 
     /* Whatsapp Settings */
     var walink = 'https://web.whatsapp.com/send',
-        phone = '6281906006846',
+        phone = '6282114126215',
         walink2 = 'Halo saya ingin memesan makanan dari catering DapoerFitri',
         text_yes = 'Terkirim.',
         text_no = 'Isi semua Formulir lalu klik Send.';
