@@ -131,8 +131,8 @@ const Form = ({ info,onClose, children, title }) => {
                         <StyledModalWrapper ref={modalWrapperRef}>
                             <form className={styles.form_mobile}>
                                 <img className={styles.close} src="https://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-cross-icon.png" onClick={() => div_hide()} />
-                                <h2>Order now!</h2>
-                                <hr />
+                                <h2 className={styles.h2_styles}>Order now!</h2>
+                                <hr className={styles.hr}/>
 
                                 <input id="wa_name" className={styles.wa_name} name="name" placeholder="Name" type="text" />
                                 <textarea id="wa_textarea" className={styles.wa_textarea} name="address" placeholder="Alamat"></textarea>
