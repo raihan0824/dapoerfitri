@@ -82,7 +82,7 @@ const Form = ({ info,onClose, children, title }) => {
                                                 {special_menu_list?.map(menu => (
                                                     <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class}/>
-                                                    <label className={styles.label} for="radio">
+                                                    <label className={styles.label} htmlFor="radio">
                                                         {menu}
                                                     </label>
                                                     </ul>
@@ -96,7 +96,7 @@ const Form = ({ info,onClose, children, title }) => {
                                             {breakfast_menu_list?.map(menu => (
                                                 <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class} />
-                                                    <label className={styles.label} for="radio">
+                                                    <label className={styles.label} htmlFor="radio">
                                                         {menu}
                                                     </label>
                                                 </ul>
@@ -154,7 +154,7 @@ const Form = ({ info,onClose, children, title }) => {
                                                 {special_menu_list?.map(menu => (
                                                     <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class}/>
-                                                    <label className={styles.label} for="radio">
+                                                    <label className={styles.label} htmlFor="radio">
                                                         {menu}
                                                     </label>
                                                     
@@ -169,7 +169,7 @@ const Form = ({ info,onClose, children, title }) => {
                                             {breakfast_menu_list?.map(menu => (
                                                 <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class} />
-                                                    <label className={styles.label} for="radio">
+                                                    <label className={styles.label} htmlFor="radio">
                                                         {menu}
                                                     </label>
                                                 </ul>
