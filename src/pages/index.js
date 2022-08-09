@@ -26,7 +26,6 @@ function Template() {
         <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'food')]}/>
         <SpacialMenu info={[chooseByType(data, 'drink'), chooseByType(data, 'food')]} />
         {/* <Introduction info={chooseByType(data, 'history')}/> */}
-        {/* <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'food')]}/> */}
       </Layout>
       <Footer>
         {/* <VideoIntro url={chooseByType(data, 'video')}/> */}
@@ -35,12 +34,5 @@ function Template() {
     </>
   )
 }
-
-// export async function getStaticProps({ preview }) {
-//   const data = (await getDataFromBucket(preview)) || [];
-//   return {
-//     props: { data },
-//   }
-// }
 
 export default Template;
