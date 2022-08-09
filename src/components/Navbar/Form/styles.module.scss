@@ -75,18 +75,12 @@ margin-top:30px
 }
 
 .h2_styles {
-// background-color:#FEFFED;
 font-family: $font-base;
 color: $color-golden;
-// padding:20px 35px;
-// margin:-10px -50px;
-// text-align:center;
-// border-radius:10px 10px 0 0
 }
 .hr {
   display: block; 
   border: 0; border-top: 2px solid $color-golden;
-  // margin: 1em 0; padding: 0; 
 }
 
 
@@ -111,7 +105,7 @@ font-size:16px;
 font-family:raleway
 }
 .wa_name:focus{
-  outline: $color-golden solid;
+  outline: 1px $color-golden solid;
 }
 .email {
 background-repeat:no-repeat;
@@ -132,7 +126,7 @@ font-family:raleway;
 margin-bottom:30px
 }
 .wa_textarea:focus{
-  outline: $color-golden solid;
+  outline: 1px $color-golden solid;
 }
 
 .submit {
@@ -179,9 +173,9 @@ color: white;
 
 
 .radio_class:checked:after {
-  width: 14px;
-  height: 14px;
-  border-radius: 14px;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
   top: -2px;
   left: -1px;
   position: relative;
