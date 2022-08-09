@@ -31,7 +31,7 @@ function Menu({ data }) {
         {/* <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'food')]}/> */}
       </Layout>
       <Footer>
-        <Contacts/>
+        <Contacts info={chooseByType(data, 'contact')}/>
       </Footer>
     </>
   )
