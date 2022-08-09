@@ -8,6 +8,9 @@ import SubHeading from 'components/SubHeading';
 import Button from 'components/Button';
 
 import styles from './styles.module.scss';
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
 
 const Gallery = ({info}) => {
   const scrollRef = useRef( null );
@@ -22,21 +25,29 @@ const Gallery = ({info}) => {
     }
   };
 
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  },[])
+
   return (
     <div className={cn(styles.gallery_container, 'flex_center')} id='gallery'>
       <div className={styles.gallery_content}>
-        <SubHeading title={info?.[0]?.metadata?.section} />
-        <h1 className='headtext_cormorant'>{info?.[0]?.metadata?.title}</h1>
-        <p className={cn(styles.gallery_content_intro, 'opensans')}>{info?.[0]?.metadata?.intro}</p>
-        <Button name='View More' path='#menu' />
+        <div data-aos="fade-up" >
+          <SubHeading title={info?.[0]?.metadata?.section} />
+          </div>
+        <h1 data-aos="fade-up" className='headtext_cormorant'>{info?.[0]?.metadata?.title}</h1>
+        <p data-aos="fade-up" className={cn(styles.gallery_content_intro, 'opensans')}>{info?.[0]?.metadata?.intro}</p>
+        <div data-aos="fade-up" >
+        <Button data-aos="fade-up" name='View More' path='#menu' />
+        </div>
       </div>
-      <div className={styles.gallery_images}>
+      <div data-aos="fade-up" className={styles.gallery_images}>
         <div className={styles.gallery_images_container} ref={scrollRef}>
           {info?.[1]?.metadata?.menu?.map(({title, slug, price, picture}, index ) => (
             <Link key={index} href={info ? `/menu/${slug}?#menu-intro` : '/#gallery'} passHref>
               <a>
                 <div className={cn(styles.gallery_images_card, 'flex_center' )} key={index}>
-                  <Image src={picture?.imgix_url} layout='fill' objectFit='cover' alt='gallery_image' />
+                  <Image src={require('../../assets/'+picture?.imgix_url)} layout='fill' objectFit='cover' alt='gallery_image' />
                   <div className={styles.gallery_image_icon}>
                     <BsInstagram />
                     <h3>{title}</h3>

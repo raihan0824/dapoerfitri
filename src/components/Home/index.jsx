@@ -5,9 +5,18 @@ import SubHeading from 'components/SubHeading';
 import Button from 'components/Button';
 
 import styles from './styles.module.scss';
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
 
-const Home = ( { info } ) => (
-    <div className={styles.header} id='home'>
+const Home = ( { info } ) => {
+
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  },[])
+
+  return (
+    <div data-aos="fade-down" className={styles.header} id='home'>
       <div className={cn('app_container', 'app_wrapper')}>
         <div className={styles.wrapper_info}>
           {/* <SubHeading title='fsdgwd'/> */}
@@ -30,6 +39,6 @@ const Home = ( { info } ) => (
         </div>
       </div>
     </div>
-);
+)};
 
 export default Home;

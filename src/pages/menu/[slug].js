@@ -12,7 +12,9 @@ import data_json from '../api/data.json'
 // import { getAllDataWithSlug,getDataFromBucket } from 'lib/api';
 import chooseByType from 'utils/chooseValueByType';
 
-function Menu({ data }) {
+function Menu() {
+
+  const data=data_json
   const {
     query: {slug},
   } = useRouter();
@@ -28,28 +30,13 @@ function Menu({ data }) {
         <MenuIntro 
         info={[chooseByType(data, 'food'), chooseByType(data, 'drink')]} 
         slug={slug} />
-        {/* <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'food')]}/> */}
+        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'food')]}/>
       </Layout>
       <Footer>
         <Contacts info={chooseByType(data, 'contact')}/>
       </Footer>
     </>
   )
-}
-
-export async function getStaticProps() {
-    const data = data_json || [];
-    return {
-      props: { data },
-    }
-  }
-
-export async function getStaticPaths() {
-    const dataWithSlug = data_json || [];
-  return {
-    paths: dataWithSlug.map((menu) => `/menu/${menu.slug}`),
-    fallback: true,
-  }
 }
 
 export default Menu;

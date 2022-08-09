@@ -6,13 +6,21 @@ import images from 'constants/images';
 import chooseByType from 'utils/chooseValueByType';
 import styles from './styles.module.scss';
 
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
+
+
 const MenuIntro = ({ info, slug }) => {
   const chooseMenuItem = chooseByType(info[0]?.metadata?.menu,`${slug}` ) || chooseByType(info[1]?.metadata?.menu,`${slug}` );
   const pic = chooseMenuItem?.picture?.imgix_url;
+
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  },[])
   
   return (
-    // console.log(pic),
-    <div className={cn(styles.intro_container, 'app_bg', 'section_padding')} id='menu-intro'>
+    <div data-aos="fade-down" className={cn(styles.intro_container, 'app_bg', 'section_padding')} id='menu-intro'>
       <div className={cn('app_container', 'app_wrapper')}>
         <div className={cn('app_wrapper_img','app_wrapper_img_reverse')}>
           <div className={cn(styles.wrapper_img, 'img_padding')} >
