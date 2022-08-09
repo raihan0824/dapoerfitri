@@ -11,12 +11,21 @@ position:fixed;
 background-color:#313131;
 overflow:auto
 }
-.close {
-position:absolute;
-right:-15px;
-top:-10px;
-font-size: 15px;
-cursor:pointer
+// .close {
+// position:absolute;
+// right:-15px;
+// top:-10px;
+// font-size: 15px;
+// cursor:pointer
+// }
+
+.overlay_close {
+  font-size: 20px;
+  color: $color-golden;
+  cursor: pointer;
+  right:-15px;
+  top:-15px;  
+  position: absolute;
 }
 
 @keyframes modalFade {
