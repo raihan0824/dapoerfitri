@@ -30,7 +30,7 @@ function Menu() {
         <MenuIntro 
         info={[chooseByType(data, 'food'), chooseByType(data, 'drink')]} 
         slug={slug} />
-        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'food')]}/>
+        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'drink'),chooseByType(data, 'food')]}/>
       </Layout>
       <Footer>
         <Contacts info={chooseByType(data, 'contact')}/>

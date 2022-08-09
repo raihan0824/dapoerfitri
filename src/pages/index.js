@@ -23,7 +23,7 @@ function Template() {
       <Layout navbar={[chooseByType(data, 'drink'), chooseByType(data, 'food')]}>
         <Home/>
         {/* <AboutUs info={chooseByType(data, 'about')}/> */}
-        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'food')]}/>
+        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'drink'), chooseByType(data, 'food')]}/>
         <SpacialMenu info={[chooseByType(data, 'drink'), chooseByType(data, 'food')]} />
         {/* <Introduction info={chooseByType(data, 'history')}/> */}
       </Layout>

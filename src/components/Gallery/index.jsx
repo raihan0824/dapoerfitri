@@ -11,6 +11,7 @@ import styles from './styles.module.scss';
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { useEffect } from 'react';
+import { ConsoleView } from 'react-device-detect';
 
 const Gallery = ({info}) => {
   const scrollRef = useRef( null );
@@ -29,6 +30,8 @@ const Gallery = ({info}) => {
     AOS.init({duration: 2000});
   },[])
 
+  const menu_data = info[2]?.metadata?.menu.concat(info[1]?.metadata?.menu)
+
   return (
     <div className={cn(styles.gallery_container, 'flex_center')} id='gallery'>
       <div className={styles.gallery_content}>
@@ -43,7 +46,7 @@ const Gallery = ({info}) => {
       </div>
       <div data-aos="fade-up" className={styles.gallery_images}>
         <div className={styles.gallery_images_container} ref={scrollRef}>
-          {info?.[1]?.metadata?.menu?.map(({title, slug, price, picture}, index ) => (
+          {menu_data.map(({title, slug, price, picture}, index ) => (
             <Link key={index} href={info ? `/menu/${slug}?#menu-intro` : '/#gallery'} passHref>
               <a>
                 <div className={cn(styles.gallery_images_card, 'flex_center' )} key={index}>
