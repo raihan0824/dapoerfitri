@@ -8,21 +8,28 @@ import knifepic from '../../assets/knife.png'
 import chooseByType from 'utils/chooseValueByType';
 
 import styles from './styles.module.scss';
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from 'react';
+
 
 const SpacialMenu = ({ info }) => {
   const food = chooseByType(info, 'food');
   const drink = chooseByType(info, 'drink');
+  useEffect(() => {
+    AOS.init({duration: 2000});
+  },[])
 
   return (
-    <div className={cn(styles.special, 'flex_center', 'section_padding')} id='menu'>
+    <div data-aos="zoom-up" className={cn(styles.special, 'flex_center', 'section_padding')} id='menu'>
       <div className={styles.special_title}>
         {/* <SubHeading title={food?.metadata?.section?.[0]?.metadata?.section} /> */}
         <h1 className='headtext_cormorant'>Menu</h1>
       </div>
       <div className={styles.special_menu}>
-      <div className={cn(styles.special_menu_wine,  'flex_center')}>
+      <div data-aos="fade-up" className={cn(styles.special_menu_wine,  'flex_center')}>
           <p className={styles.special_menu_heading}>{food?.metadata?.title}</p>
-          <div className={styles.special_menu_items}>
+          <div data-aos="fade-up" className={styles.special_menu_items}>
           {food?.metadata?.menu?.map(({title, slug, price, tags}) => (
             <div className={styles.menu_item_wrapper} key={slug}>
               <Link href={info ? `/menu/${slug}?#menu-intro` : '/#menu'} passHref>
@@ -34,12 +41,12 @@ const SpacialMenu = ({ info }) => {
           ))}
         </div>
       </div>
-      <div className={styles.special_menu_img}>
+      <div data-aos="flip-down" className={styles.special_menu_img}>
         <Image src={knifepic} objectFit='contain' layout='fill' alt='menu_img' />
       </div>
-       <div className={cn(styles.special_menu_cocktails,  'flex_center')}>
+       <div data-aos="fade-up" className={cn(styles.special_menu_cocktails,  'flex_center')}>
         <p className={styles.special_menu_heading}>{drink?.metadata?.title}</p>
-        <div className={styles.special_menu_items}>
+        <div data-aos="fade-up" className={styles.special_menu_items}>
           {drink?.metadata?.menu?.map(({title, slug, price, tags}) => (
             <div key={slug}>
               <Link href={info ? `/menu/${slug}?#menu-intro` : '/#menu'} passHref>
