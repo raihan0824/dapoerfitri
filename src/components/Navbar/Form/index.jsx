@@ -165,7 +165,9 @@ const Form = ({ info,onClose, children, title }) => {
                                             {breakfast_menu_list?.map(menu => (
                                                 <ul key={menu}>
                                                     <input value={menu} name="radio" type="radio" className={styles.radio_class} />
-                                                    {menu}
+                                                    <label className={styles.label} for="radio">
+                                                        {menu}
+                                                    </label>
                                                 </ul>
                                             ))}
                                         </div>
