@@ -11,7 +11,7 @@ import styles from './styles.module.scss';
 const Navbar = ({ navbarInfo }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const navbarItems = ['home', 'menu','contact'];
+  const navbarItems = ['Home', 'Menu','Contact'];
   // const navbarItems = [navbarInfo?.metadata?.about, navbarInfo?.metadata?.contact, navbarInfo?.metadata?.home, navbarInfo?.metadata?.menu];
 
   const [showModal, setShowModal] = useState(false);

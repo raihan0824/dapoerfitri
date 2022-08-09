@@ -64,7 +64,7 @@
                     "slug": "nasgor",
                     "price": "Rp25k",
                     "tags": "",
-                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .",
+                    "intro": "Rasa nasi goreng DapoerFitri yang nikmat dipadu dengan ayam goreng yang lembut, mampu membuat lidah merasakan gabungan kelezatan yang paripurna. Kelezatan nasi goreng DapoerFitri cocok untuk menjadi makan pembuka harimu,",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
                         "imgix_url": "nasgor.jpg"
@@ -75,7 +75,7 @@
                     "slug": "naskun",
                     "price": "Rp25k",
                     "tags": "",
-                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .",
+                    "intro": "Nasi Kuning Plus Plus sangat cocok dijadikan menu sarapan. Satu porsi nasi kuning Dapoerfitri disajikan dengan ayam goreng, telur bulat, tempe orek dan bihun",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png",
                         "imgix_url": "naskun.jpg"
@@ -86,7 +86,7 @@
                     "slug": "nasbul",
                     "price": "Rp25k",
                     "tags": "",
-                    "intro": "Lorem Ipsum DLorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .olor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .",
+                    "intro": "Nasi kebuli DapoerFitri dimasak dengan berbagai bumbu rempah yang khas sehingga menghasilkan rasa yang autentik. Nasi kebuli ini juga dilengkapi dengan ayam goreng yang empuk dan juicy, acar, sambal dan sayuran segar.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
                         "imgix_url": "nasbul.jpeg"
@@ -97,7 +97,7 @@
                     "slug": "nasduk",
                     "price": "Rp20k",
                     "tags": "",
-                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit . Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .",
+                    "intro": "Keunikan nasi uduk DapoerFitri terletak pada racikan bumbunya yang tak main-main. Aroma wangi dari bumbu rempah dan gurihnya santan kelapa juga langsung terasa di lidah. Pilihan lauk yang ditawarkan juga banyak.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
                         "imgix_url": "nasduk.jpg"
@@ -168,7 +168,7 @@
                     "slug": "liwet",
                     "price": "Rp20k",
                     "tags": "",
-                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et.",
+                    "intro": "Nasi Liwet adalah salah satu jenis makanan khas Solo. Nasi Liwet memiliki cita rasa gurih dan lezat karena dimasak dengan kaldu ayam. Nasi liwet disajikan dengan sayur labu siam dan telur ayam rebus serta kumut (santan kelapa kental) dalam pincuk (daun pisang).",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/a818dda0-b73e-11ec-a642-7195085ee56f-gallery01.png",
                         "imgix_url": "nasiliwet.png"
@@ -179,7 +179,7 @@
                     "slug": "titi",
                     "price": "Rp50k",
                     "tags": "",
-                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et..",
+                    "intro": "Mie Titi merupakan makanan khas Makassar dengan bahan dasar mie yang disiram dengan kuah kental. Sajian khas Makassar ini mirip dengan ifumie, hanya saja mie yang digunakan sangat khas, yaitu mie kering dan berukuran kecil. Rasanya lezat dan cara penyajiannya yang cukup praktis, sehingga cocok dijadikan untuk santapan anda.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/c4cfa280-b73e-11ec-a642-7195085ee56f-gallery02.png",
                         "imgix_url": "mititi.jpg"
@@ -190,7 +190,7 @@
                     "slug": "laksa",
                     "price": "Rp50k",
                     "tags": "",
-                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et.",
+                    "intro": "Hidangan berkuah pedas ini sangatlah cocok dinikmati untuk menemani Anda di hari hujan, dan pasti akan mengenyangkan perut dan menggoyang lidah Anda.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/e114b9d0-b73e-11ec-a642-7195085ee56f-gallery04.png",
                         "imgix_url": "laksa.jpg"
@@ -201,7 +201,7 @@
                     "slug": "ayam",
                     "price": "Rp30k",
                     "tags": "",
-                    "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Quis Pharetra Adipiscing Ultrices Vulputate Posuere Tristique. In Sed Odio Nec Aliquet Eu Proin Mauris Et.",
+                    "intro": "Ayam Bakar DapoerFitri punya rasa manis yang enak didampingi sambal dan lalapan. Bumbunya meresap sampai dalam sehingga nikmat saat disantap menggiurkan. Buat yang mau pesan untuk makan rame-rame, ada menu ayam bakar 1 ekor di sini, nih!",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
                         "imgix_url": "ayambakar.jpg"
