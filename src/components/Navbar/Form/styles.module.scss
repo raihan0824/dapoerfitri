@@ -96,16 +96,16 @@ font-family:raleway
 .wa_name {
 background-repeat:no-repeat;
 background-position:5px 7px;
-width:82%;
+width:100%;
 padding:10px;
 margin-top:30px;
-border:1px solid #fff;
+border:1px solid $color-golden;
 // padding-left:40px;
 font-size:16px;
 font-family:raleway
 }
 .wa_name:focus{
-  outline: 1px $color-golden solid;
+  outline: none;
 }
 .email {
 background-repeat:no-repeat;
@@ -114,19 +114,19 @@ background-position:5px 7px
 .wa_textarea {
 background-repeat:no-repeat;
 background-position:5px 7px;
-width:82%;
+width:100%;
 height:95px;
 padding:10px;
 resize:none;
 margin-top:30px;
-border:1px solid #ccc;
+border:1px solid $color-golden;
 // padding-left:10px;
 font-size:16px;
 font-family:raleway;
 margin-bottom:30px
 }
 .wa_textarea:focus{
-  outline: 1px $color-golden solid;
+  outline: none
 }
 
 .submit {
@@ -160,7 +160,18 @@ cursor:pointer
 .datainput{position:relative;margin:5px 0 20px}
 .datainput p{font-size:12px;background:#eee;display:inline-block;padding:5px 15px;border-radius:.5rem}
 .whatsapp-form textarea{min-height:120px}
-.datainput select{padding:12px 0;color:#555;font-size:14px;width:100%;border:0;border-bottom:1px solid #ddd;outline:none;background:#fff}
+.datainput select{
+  padding:10px 0;
+  color:gray;
+  font-size:16px;
+  width:100%;
+  border:1px solid $color-golden;
+  border-bottom:1px solid #ddd;
+  outline:none;
+  background:#fff;
+  font-family:raleway;
+  padding-left: 5px;
+}
 
 .radio_class{
   margin-right: 5px;
