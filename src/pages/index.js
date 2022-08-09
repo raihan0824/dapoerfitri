@@ -36,7 +36,7 @@ function Template() {
       <Footer>
         {/* <VideoIntro url={chooseByType(data, 'video')}/> */}
         <Contacts 
-        // info={chooseByType(data, 'contact')}
+        info={chooseByType(data, 'contact')}
         />
       </Footer>
     </>

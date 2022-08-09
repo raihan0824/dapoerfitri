@@ -64,7 +64,7 @@
                     "slug": "nasgor",
                     "price": "Rp25k",
                     "tags": "",
-                    "intro": "Rasa nasi goreng DapoerFitri yang nikmat dipadu dengan ayam goreng yang lembut, mampu membuat lidah merasakan gabungan kelezatan yang paripurna. Kelezatan nasi goreng DapoerFitri cocok untuk menjadi makan pembuka harimu,",
+                    "intro": "Rasa nasi goreng DapoerFitri yang nikmat dipadu dengan ayam goreng yang lembut, mampu membuat lidah merasakan gabungan kelezatan yang paripurna. Kelezatan nasi goreng DapoerFitri cocok untuk menjadi makan pembuka harimu.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
                         "imgix_url": "nasgor.jpg"
@@ -228,16 +228,16 @@
         "created_at": "2022-04-08T13:12:06.844Z",
         "metadata": {
             "section": "Contact",
-            "title": "Contact US",
-            "intro": "+123 554 4568",
+            "title": "Hubungi Kami",
+            "intro": "+6281906006846",
             "picture": {
                 "url": "https://cdn.cosmicjs.com/4b45b3b0-b73d-11ec-a642-7195085ee56f-laurels.png",
                 "imgix_url": "https://imgix.cosmicjs.com/4b45b3b0-b73d-11ec-a642-7195085ee56f-laurels.png"
             },
             "details": [
-                {
+                {   
                     "title": "Opening Hours",
-                    "intro": "Mon - Fri: 10:00 Am - 02:00 Am\nSat - Sun: 10:00 Am - 03:00 Am",
+                    "intro": "Senin - Jumat: 8 Am - 6 pm \n Sabtu - Minggu: 10 Am - 03 Pm",
                     "picture": {
                         "url": null,
                         "imgix_url": null
@@ -245,7 +245,7 @@
                 },
                 {
                     "title": "Find Us",
-                    "intro": "Address: 9 W 53rd St, New York, NY 10019, USA",
+                    "intro": "Komplek Castilla, BSD City",
                     "picture": {
                         "url": null,
                         "imgix_url": null
