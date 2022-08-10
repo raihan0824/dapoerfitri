@@ -33,7 +33,10 @@ const Form = ({ info,onClose, children, title }) => {
     
     var breakfast_menu_list = []
     for (var i = 0; i <= breakfast_menu?.metadata?.menu.length - 1; i++) {
-        breakfast_menu_list.push(breakfast_menu?.metadata?.menu[i].title);
+        if (breakfast_menu?.metadata?.menu[i]?.available > 0) {
+           breakfast_menu_list.push(breakfast_menu?.metadata?.menu[i].title); 
+        }
+        
     }
 
     const [showhide, setShowhide]=useState('');

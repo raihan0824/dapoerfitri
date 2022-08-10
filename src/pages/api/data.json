@@ -64,6 +64,8 @@
                     "slug": "nasgor",
                     "price": "Rp25k",
                     "tags": "",
+                    "day":["Senin"],
+                    "available":1,
                     "intro": "Rasa nasi goreng DapoerFitri yang nikmat dipadu dengan ayam goreng yang lembut, mampu membuat lidah merasakan gabungan kelezatan yang paripurna. Kelezatan nasi goreng DapoerFitri cocok untuk menjadi makan pembuka harimu.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
@@ -75,6 +77,8 @@
                     "slug": "naskun",
                     "price": "Rp25k",
                     "tags": "",
+                    "day":"Senin",
+                    "available":1,
                     "intro": "Nasi Kuning Plus Plus sangat cocok dijadikan menu sarapan. Satu porsi nasi kuning Dapoerfitri disajikan dengan ayam goreng, telur bulat, tempe orek dan bihun",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png",
@@ -86,6 +90,8 @@
                     "slug": "nasbul",
                     "price": "Rp25k",
                     "tags": "",
+                    "day":"Rabu",
+                    "available":1,
                     "intro": "Nasi kebuli DapoerFitri dimasak dengan berbagai bumbu rempah yang khas sehingga menghasilkan rasa yang autentik. Nasi kebuli ini juga dilengkapi dengan ayam goreng yang empuk dan juicy, acar, sambal dan sayuran segar.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
@@ -97,6 +103,8 @@
                     "slug": "nasduk",
                     "price": "Rp20k",
                     "tags": "",
+                    "day":"Kamis",
+                    "available":1,
                     "intro": "Keunikan nasi uduk DapoerFitri terletak pada racikan bumbunya yang tak main-main. Aroma wangi dari bumbu rempah dan gurihnya santan kelapa juga langsung terasa di lidah. Pilihan lauk yang ditawarkan juga banyak.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
@@ -260,11 +268,11 @@
         "created_at": "2022-04-08T11:56:55.134Z",
         "metadata": {
             "section": "Chef's Word",
-            "title": "What We Believe In",
+            "title": "Breakfast Menu Schedule",
             "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .  Auctor Sit Iaculis In Arcu. Vulputate Nulla Lobortis Mauris Eget Sit. Nulla Scelerisque Scelerisque Congue Ac Consequat, Aliquam Molestie Lectus Eu. Congue Iaculis Integer Curabitur Semper Sit Nunc.",
             "picture": {
                 "url": "https://cdn.cosmicjs.com/f8663b60-b732-11ec-a642-7195085ee56f-chef.png",
-                "imgix_url": "https://imgix.cosmicjs.com/f8663b60-b732-11ec-a642-7195085ee56f-chef.png"
+                "imgix_url": "schedule.png"
             },
             "sub_intro": "Kevin Luo ",
             "details": []
