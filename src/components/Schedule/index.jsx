@@ -32,7 +32,7 @@ const Schedule = ({ info }) => {
     AOS.init({duration: 2000});
   },[])
 
-  const menu_data = info?.metadata?.menu
+  const breakfast_data = info?.metadata?.menu
 
 //   var lst=[]
 //   for (var i = 0; i <= menu_data?.metadata?.menu.length - 1; i++) {
@@ -82,8 +82,8 @@ const Schedule = ({ info }) => {
 
     <div data-aos="fade-up" className={styles.gallery_images}>
         <div className={styles.gallery_images_container} ref={scrollRef}>
-          {menu_data.map(({title, slug, price, picture}, index ) => (
-            <Link key={index} href={info ? `/menu/${slug}?#menu-intro` : '/#gallery'} passHref>
+          {breakfast_data.map(({title, slug, price, picture}, index ) => (
+            <Link key={index} href={info ? `/menu/${slug}?#menu-intro` : '/#schedule'} passHref>
               <a>
                 <div className={cn(styles.gallery_images_card, 'flex_center' )} key={index}>
                   <Image src={require('../../assets/'+picture?.imgix_url)} layout='fill' objectFit='cover' alt='gallery_image' />
@@ -111,11 +111,9 @@ const Schedule = ({ info }) => {
         <div className={styles.intro_content}>
           
             <div data-aos="fade-up" className={styles.special_menu_items}>
-              {schedule.map(({ day,menu}) => (
-                <div>
-                  {/* <Link href={info ? `/menu/${slug}?#menu-intro` : '/#menu'} passHref> */}
-                    <a>
-                      
+              {schedule.map(({ day,menu}, index) => (
+                <div key={index}>
+                    <a>                   
                       <div className={styles.menuitem_container}>
                         <div className={styles.menuitem_head}>
                           <div className={styles.menu_day}>
@@ -128,19 +126,12 @@ const Schedule = ({ info }) => {
                         </div>
                       </div>
                       );
-
                     </a>
-                  {/* </Link> */}
                 </div>
               ))}
             </div>
 
         </div>
-        {/* <div className={styles.intro_sign}>
-          <p>{info?.metadata?.sub_info}</p>
-          <p className='opensans'>Chef & Founder</p>
-          <Image width={200} height={100} src={images?.sign} alt='sign_image' objectFit='contain' />
-        </div> */}
       </div>
     </div>
   )

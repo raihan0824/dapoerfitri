@@ -26,11 +26,11 @@ function Menu() {
         <meta name="description" content="Catering rumahan BSD" />
         <link rel="icon" href="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png" />
       </Head>
-      <Layout navbar={[chooseByType(data, 'drink'), chooseByType(data, 'food')]}>
+      <Layout navbar={[chooseByType(data, 'breakfast'), chooseByType(data, 'special')]}>
         <MenuIntro 
-        info={[chooseByType(data, 'food'), chooseByType(data, 'drink')]} 
+        info={[chooseByType(data, 'special'), chooseByType(data, 'breakfast')]} 
         slug={slug} />
-        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'drink'),chooseByType(data, 'food')]}/>
+        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'breakfast'),chooseByType(data, 'special')]}/>
       </Layout>
       <Footer>
         <Contacts info={chooseByType(data, 'contact')}/>

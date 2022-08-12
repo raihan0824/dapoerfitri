@@ -46,7 +46,7 @@ const Gallery = ({info}) => {
       </div>
       <div data-aos="fade-up" className={styles.gallery_images}>
         <div className={styles.gallery_images_container} ref={scrollRef}>
-          {menu_data.map(({title, slug, price, picture}, index ) => (
+          {menu_data?.map(({title, slug, price, picture}, index ) => (
             <Link key={index} href={info ? `/menu/${slug}?#menu-intro` : '/#gallery'} passHref>
               <a>
                 <div className={cn(styles.gallery_images_card, 'flex_center' )} key={index}>
