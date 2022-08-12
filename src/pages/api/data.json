@@ -27,8 +27,8 @@
         }
     },
     {
-        "slug": "drink",
-        "title": "Drink",
+        "slug": "breakfast",
+        "title": "Breakfast",
         "created_at": "2022-04-09T21:25:26.657Z",
         "metadata": {
             "section": [
@@ -77,7 +77,7 @@
                     "slug": "naskun",
                     "price": "Rp25k",
                     "tags": "",
-                    "day":"Senin",
+                    "day":"Selasa",
                     "available":1,
                     "intro": "Nasi Kuning Plus Plus sangat cocok dijadikan menu sarapan. Satu porsi nasi kuning Dapoerfitri disajikan dengan ayam goreng, telur bulat, tempe orek dan bihun",
                     "picture": {
@@ -103,7 +103,7 @@
                     "slug": "nasduk",
                     "price": "Rp20k",
                     "tags": "",
-                    "day":"Kamis",
+                    "day":"Rabu",
                     "available":1,
                     "intro": "Keunikan nasi uduk DapoerFitri terletak pada racikan bumbunya yang tak main-main. Aroma wangi dari bumbu rempah dan gurihnya santan kelapa juga langsung terasa di lidah. Pilihan lauk yang ditawarkan juga banyak.",
                     "picture": {
@@ -111,12 +111,39 @@
                         "imgix_url": "nasduk.jpg"
                     }
                 }
-            ]
+            ],
+            "schedule":
+                {
+                    "slug": "breakfast_schedule",
+                    "title": "Breakfast Menu Schedule",
+                    "created_at": "2022-04-08T11:56:55.134Z",
+                    "metadata": {
+                        "section": "Chef's Word",
+                        "title": "Breakfast Menu Schedule",
+                        "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .  Auctor Sit Iaculis In Arcu. Vulputate Nulla Lobortis Mauris Eget Sit. Nulla Scelerisque Scelerisque Congue Ac Consequat, Aliquam Molestie Lectus Eu. Congue Iaculis Integer Curabitur Semper Sit Nunc.",
+                        "picture": {
+                            "url": "https://cdn.cosmicjs.com/f8663b60-b732-11ec-a642-7195085ee56f-chef.png",
+                            "imgix_url": "bg.png"
+                        },
+                        "sub_intro": "Kevin Luo ",
+                        "details": []
+                    },
+                    "schedule_menu": [
+                        {"day":"Senin","menu":["Nasi Kuning"]},
+                        {"day":"Selasa","menu":["Nasi Uduk"]},
+                        {"day":"Rabu","menu":"Nasi Liwet | Nasi Goreng"},
+                        {"day":"Kamis","menu":"Nasi Kuning | Nasi Liwet"},
+                        {"day":"Jumat","menu":["Nasi Kebuli"]}
+
+                    ]
+                    
+                }
+            
         }
     },
     {
-        "slug": "food",
-        "title": "Food",
+        "slug": "special",
+        "title": "Special food",
         "created_at": "2022-04-09T21:16:59.615Z",
         "metadata": {
             "section": [
@@ -262,22 +289,7 @@
             ]
         }
     },
-    {
-        "slug": "history",
-        "title": "History",
-        "created_at": "2022-04-08T11:56:55.134Z",
-        "metadata": {
-            "section": "Chef's Word",
-            "title": "Breakfast Menu Schedule",
-            "intro": "Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Auctor Sit .  Auctor Sit Iaculis In Arcu. Vulputate Nulla Lobortis Mauris Eget Sit. Nulla Scelerisque Scelerisque Congue Ac Consequat, Aliquam Molestie Lectus Eu. Congue Iaculis Integer Curabitur Semper Sit Nunc.",
-            "picture": {
-                "url": "https://cdn.cosmicjs.com/f8663b60-b732-11ec-a642-7195085ee56f-chef.png",
-                "imgix_url": "schedule.png"
-            },
-            "sub_intro": "Kevin Luo ",
-            "details": []
-        }
-    },
+
     {
         "slug": "header",
         "title": "Header ",

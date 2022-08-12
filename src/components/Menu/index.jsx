@@ -14,8 +14,8 @@ import { useEffect } from 'react';
 
 
 const SpacialMenu = ({ info }) => {
-  const food = chooseByType(info, 'food');
-  const drink = chooseByType(info, 'drink');
+  const special = chooseByType(info, 'special');
+  const breakfast = chooseByType(info, 'breakfast');
   useEffect(() => {
     AOS.init({duration: 2000});
   },[])
@@ -28,9 +28,9 @@ const SpacialMenu = ({ info }) => {
       </div>
       <div className={styles.special_menu}>
       <div data-aos="fade-up" className={cn(styles.special_menu_wine,  'flex_center')}>
-          <p className={styles.special_menu_heading}>{food?.metadata?.title}</p>
+          <p className={styles.special_menu_heading}>{special?.metadata?.title}</p>
           <div data-aos="fade-up" className={styles.special_menu_items}>
-          {food?.metadata?.menu?.map(({title, slug, price, tags}) => (
+          {special?.metadata?.menu?.map(({title, slug, price, tags}) => (
             <div className={styles.menu_item_wrapper} key={slug}>
               <Link href={info ? `/menu/${slug}?#menu-intro` : '/#menu'} passHref>
                 <a>
@@ -45,9 +45,9 @@ const SpacialMenu = ({ info }) => {
         <Image src={knifepic} objectFit='contain' layout='fill' alt='menu_img' />
       </div>
        <div data-aos="fade-up" className={cn(styles.special_menu_cocktails,  'flex_center')}>
-        <p className={styles.special_menu_heading}>{drink?.metadata?.title}</p>
+        <p className={styles.special_menu_heading}>{breakfast?.metadata?.title}</p>
         <div data-aos="fade-up" className={styles.special_menu_items}>
-          {drink?.metadata?.menu?.map(({title, slug, price, tags}) => (
+          {breakfast?.metadata?.menu?.map(({title, slug, price, tags}) => (
             <div key={slug}>
               <Link href={info ? `/menu/${slug}?#menu-intro` : '/#menu'} passHref>
                 <a>

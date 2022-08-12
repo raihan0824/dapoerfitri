@@ -4,7 +4,7 @@ import Layout from 'components/Layout';
 import Footer from 'components/Footer';
 import AboutUs from 'components/AboutUs';
 import SpacialMenu from 'components/Menu';
-import Introduction from 'components/Introduction';
+import Schedule from 'components/Schedule';
 import VideoIntro from 'components/VideoIntro';
 import Gallery from 'components/Gallery';
 import Contacts from 'components/Contact';
@@ -20,12 +20,12 @@ function Template() {
         <meta name="description" content="Catering rumahan BSD" />
         <link rel="icon" href="https://www.freeiconspng.com/thumbs/restaurant-icon-png/restaurant-icon-png-plate-1.png" />
       </Head>
-      <Layout navbar={[chooseByType(data, 'drink'), chooseByType(data, 'food')]}>
+      <Layout navbar={[chooseByType(data, 'breakfast'), chooseByType(data, 'special')]}>
         <Home/>
         {/* <AboutUs info={chooseByType(data, 'about')}/> */}
-        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'drink'), chooseByType(data, 'food')]}/>
-        <SpacialMenu info={[chooseByType(data, 'drink'), chooseByType(data, 'food')]} />
-        <Introduction info={[chooseByType(data, 'history'),chooseByType(data, 'drink')]}/>
+        <Gallery info={[chooseByType(data, 'gallery'), chooseByType(data, 'breakfast'), chooseByType(data, 'special')]}/>
+        <SpacialMenu info={[chooseByType(data, 'breakfast'), chooseByType(data, 'special')]} />
+        <Schedule info={chooseByType(data, 'breakfast')}/>
       </Layout>
       <Footer>
         {/* <VideoIntro url={chooseByType(data, 'video')}/> */}

@@ -196,7 +196,7 @@ color: white;
   width:11px;
   height:11px;
   border:1px solid darkgray;
-  border-radius:50%;
+  // border-radius:50%;
   outline:none;
   box-shadow:0 0 5px 0px gray inset;
 }
@@ -215,4 +215,9 @@ color: white;
 }
 .radio_class:checked:before {
   background:$color-golden;
+}
+
+.a:hover{
+  text-decoration: underline;
+  color: $color-golden;
 }

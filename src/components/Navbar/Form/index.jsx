@@ -22,8 +22,20 @@ const Form = ({ info,onClose, children, title }) => {
     }
 
     // Get data from API
-    const special_menu = chooseByType(info, 'food');
-    const breakfast_menu = chooseByType(info, 'drink');
+    const special_menu = chooseByType(info, 'special');
+    const breakfast_menu = chooseByType(info, 'breakfast');
+
+    // Create a function to get today's day
+    const day = new Date() 
+    var weekdays = new Array(7);
+    weekdays[0] = "Minggu";
+    weekdays[1] = "Senin";
+    weekdays[2] = "Selasa";
+    weekdays[3] = "Rabu";
+    weekdays[4] = "Kamis";
+    weekdays[5] = "Jumat";
+    weekdays[6] = "Sabtu";
+    const today = weekdays[day.getDay()]
 
     // Create a list of menu items from API 
     var special_menu_list=[]
@@ -31,10 +43,13 @@ const Form = ({ info,onClose, children, title }) => {
         special_menu_list.push(special_menu?.metadata?.menu[i].title);
         }
     
+    // Put today's menu
     var breakfast_menu_list = []
-    for (var i = 0; i <= breakfast_menu?.metadata?.menu.length - 1; i++) {
-        if (breakfast_menu?.metadata?.menu[i]?.available > 0) {
-           breakfast_menu_list.push(breakfast_menu?.metadata?.menu[i].title); 
+    for (var i = 0; i <= 7; i++) {
+        if (breakfast_menu?.metadata?.schedule?.schedule_menu[i]?.day==today) {
+            for (var j = 0; j <= breakfast_menu?.metadata?.schedule?.schedule_menu[i]?.menu.length-1; j++) {
+                breakfast_menu_list.push(breakfast_menu?.metadata?.schedule?.schedule_menu[i]?.menu[j]); 
+            }
         }
         
     }
@@ -79,35 +94,40 @@ const Form = ({ info,onClose, children, title }) => {
                                         <option value="1">Special Menu</option>
                                         <option value="2">Breakfast Menu</option>
                                     </select>
-                 
+                                    
                                     {showhide==='1' && (
                                             <div>
                                                 <div style={{margin:"10px"}}/>
                                                 {special_menu_list?.map(menu => (
                                                     <ul key={menu}>
-                                                    <input value={menu} name="radio" type="radio" className={styles.radio_class}/>
+                                                    <input value={menu} name="checkbox" type="checkbox" className={styles.radio_class}/>
                                                     <label className={styles.label} htmlFor="radio">
                                                         {menu}
                                                     </label>
                                                     </ul>
-                                                ))}                                                       
+                                                ))}
+                                                <div style={{ margin: "5px" }} />
+                                                <div>*) Min Pemesanan 10 porsi</div>                                                       
                                             </div> 
                                         )}  
 
                                     {showhide === '2' && (
                                         <div>
                                             <div style={{ margin: "10px" }} />
+                                            <div>Menu hari {today}: </div>
+                                            <div style={{ margin: "5px" }} />
                                             {breakfast_menu_list?.map(menu => (
                                                 <ul key={menu}>
-                                                    <input value={menu} name="radio" type="radio" className={styles.radio_class} />
-                                                    <label className={styles.label} htmlFor="radio">
+                                                    <input value={menu} name="checkbox" type="checkbox" className={styles.radio_class} />
+                                                    <label className={styles.label}>
                                                         {menu}
                                                     </label>
                                                 </ul>
                                             ))}
+                                                 <div style={{ margin: "5px" }} />
+                                                <a className={styles.a} href="/#schedule" target="_blank">*) Untuk melihat jadwal menu sarapan, silahkan klik link ini</a>                                                 
                                         </div>
                                     )}     
-                                    
                                 </div>
 
                                 <div>
@@ -158,29 +178,34 @@ const Form = ({ info,onClose, children, title }) => {
                                                 <div style={{margin:"10px"}}/>
                                                 {special_menu_list?.map(menu => (
                                                     <ul key={menu}>
-                                                    <input value={menu} name="radio" type="radio" className={styles.radio_class}/>
+                                                    <input value={menu} name="checkbox" type="checkbox" className={styles.radio_class}/>
                                                     <label className={styles.label} htmlFor="radio">
                                                         {menu}
                                                     </label>
-                                                    
                                                     </ul>
-                                                ))}                                                       
+                                                ))}
+                                                <div style={{ margin: "5px" }} />
+                                                <div>*) Min Pemesanan 10 porsi</div>                                                       
                                             </div> 
                                         )}  
 
                                     {showhide === '2' && (
                                         <div>
                                             <div style={{ margin: "10px" }} />
+                                            <div>Menu hari {today}: </div>
+                                            <div style={{ margin: "5px" }} />
                                             {breakfast_menu_list?.map(menu => (
                                                 <ul key={menu}>
-                                                    <input value={menu} name="radio" type="radio" className={styles.radio_class} />
-                                                    <label className={styles.label} htmlFor="radio">
+                                                    <input value={menu} name="checkbox" type="checkbox" className={styles.radio_class} />
+                                                    <label className={styles.label}>
                                                         {menu}
                                                     </label>
                                                 </ul>
                                             ))}
+                                                 <div style={{ margin: "5px" }} />
+                                                 <a href="/#schedule" target="_blank">*) Untuk melihat jadwal menu sarapan, silahkan klik link ini</a>                                                  
                                         </div>
-                                    )}    
+                                    )}      
 
                                 </div>
 
