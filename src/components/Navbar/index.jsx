@@ -12,8 +12,6 @@ const Navbar = ({ navbarInfo }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const navbarItems = ['Home', 'Menu','Schedule','Contact'];
-  // const navbarItems = [navbarInfo?.metadata?.about, navbarInfo?.metadata?.contact, navbarInfo?.metadata?.home, navbarInfo?.metadata?.menu];
-
   const [showModal, setShowModal] = useState(false);
 
   const handleToggle = () => {

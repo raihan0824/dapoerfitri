@@ -23,7 +23,6 @@ const SpacialMenu = ({ info }) => {
   return (
     <div data-aos="zoom-up" className={cn(styles.special, 'flex_center', 'section_padding')} id='menu'>
       <div className={styles.special_title}>
-        {/* <SubHeading title={food?.metadata?.section?.[0]?.metadata?.section} /> */}
         <h1 className='headtext_cormorant'>Menu</h1>
       </div>
       <div className={styles.special_menu}>
