@@ -73,6 +73,17 @@
                     }
                 },
                 {
+                    "title": "Mie Titi",
+                    "slug": "titi",
+                    "price": "Rp50k",
+                    "tags": "",
+                    "intro": "Makanan khas makassar, dapoerfitri ganti mie nya dengan mie telor yang digoreng garing dengan kuah kental gurih isinya bakso sapi, bakso ikan, Hati ampela, otak2, dada ayam, caisin dan sawi putih + perasan jeruk nipis dan sambel",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/c4cfa280-b73e-11ec-a642-7195085ee56f-gallery02.png",
+                        "imgix_url": "mititi.jpg"
+                    }
+                },
+                {
                     "title": "Nasi Kuning",
                     "slug": "naskun",
                     "price": "Rp25k",
@@ -122,6 +133,45 @@
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
                         "imgix_url": "nasiijo.jpg"
+                    }
+                },
+                {
+                    "title": "Nasi Jeruk",
+                    "slug": "nasijeruk",
+                    "price": "Rp25k",
+                    "tags": "",
+                    "day":"Rabu",
+                    "available":1,
+                    "intro": "Nasi yang diolah bersama santan, daun jeruk dalamJumlah yang banyak, berikut rempah/ bumbu khas dapoerfitri, wangi nasi nya bikin laperrr, disajikan dengan bakwan goreng, Krecek, telur dan tambahan sesuai selera yaitu ayam goreng lengkuas atau telor balado, bisa juga lengkap,. Plus kerupuk dan sambal.",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                        "imgix_url": "nasijeruk.png"
+                    }
+                },
+                {
+                    "title": "Nasi Kecombrang",
+                    "slug": "nasikecombrang",
+                    "price": "Rp25k",
+                    "tags": "",
+                    "day":"Rabu",
+                    "available":1,
+                    "intro": "Nasi ini diberi topping saat disajikan, yaitu ikan teri, Cabai setan. Nasi nya sndiri diolah dengan sedikit minyak, bawang merah yang sudah digoreng, terimedan yang sudah digoreng kering, irisan kecombrang yang khas wanginya dan rempah lainnya, sehingga rasanya gurih dan aromanya mengundang selera. Dapoerfitri sajikan dengan menu tambahan bakwan goreng, cumi asin Cabe ijo, kerupuk dan sambel yang maknyoss...",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                        "imgix_url": "nasikecombrang.png"
+                    }
+                },
+                {
+                    "title": "Nasi Langgi",
+                    "slug": "nasiijo",
+                    "price": "Rp25k",
+                    "tags": "",
+                    "day":"Rabu",
+                    "available":1,
+                    "intro": "Nasi yang diolah bersama SANTAN dan rempah/ bumbu khas dapoerfitri, wangi nasi nya bikin laperrr, disajikan dengan taburan serundeng, orek tempe, telur dadar iris dan tambahan sesuai selera yaitu ayam goreng lengkuas atau telor balado, bisa juga lengkap,. Plus kerupuk dan sambal.",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                        "imgix_url": "nasilanggi.jpg"
                     }
                 }
 
@@ -221,17 +271,6 @@
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/a818dda0-b73e-11ec-a642-7195085ee56f-gallery01.png",
                         "imgix_url": "nasiliwet.png"
-                    }
-                },
-                {
-                    "title": "Mie Titi",
-                    "slug": "titi",
-                    "price": "Rp50k",
-                    "tags": "",
-                    "intro": "Makanan khas makassar, dapoerfitri ganti mie nya dengan mie telor yang digoreng garing dengan kuah kental gurih isinya bakso sapi, bakso ikan, Hati ampela, otak2, dada ayam, caisin dan sawi putih + perasan jeruk nipis dan sambel",
-                    "picture": {
-                        "url": "https://cdn.cosmicjs.com/c4cfa280-b73e-11ec-a642-7195085ee56f-gallery02.png",
-                        "imgix_url": "mititi.jpg"
                     }
                 },
                 {
