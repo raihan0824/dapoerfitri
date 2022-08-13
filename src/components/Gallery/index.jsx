@@ -41,7 +41,7 @@ const Gallery = ({info}) => {
         <h1 data-aos="fade-up" className='headtext_cormorant'>{info?.[0]?.metadata?.title}</h1>
         <p data-aos="fade-up" className={cn(styles.gallery_content_intro, 'opensans')}>{info?.[0]?.metadata?.intro}</p>
         <div data-aos="fade-up" >
-        <Button data-aos="fade-up" name='View More' path='#menu' />
+        <Button data-aos="fade-up" name='View More' path='/#menu' />
         </div>
       </div>
       <div data-aos="fade-up" className={styles.gallery_images}>

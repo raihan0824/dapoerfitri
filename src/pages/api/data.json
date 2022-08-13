@@ -79,7 +79,7 @@
                     "tags": "",
                     "day":"Selasa",
                     "available":1,
-                    "intro": "Nasi Kuning Plus Plus sangat cocok dijadikan menu sarapan. Satu porsi nasi kuning Dapoerfitri disajikan dengan ayam goreng, telur bulat, tempe orek dan bihun",
+                    "intro": "Nasi yang diolah bersama santan, Kunyit dan bumbu khas dapoerfitri, disajikan dengan orek tempe, bihun goreng dan tambahan sesuai selera yaitu ayam goreng lengkuas atau telor balado, plus kerupuk dan sambal.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/aec5bf20-b729-11ec-a642-7195085ee56f-menu.png",
                         "imgix_url": "naskun.jpg"
@@ -92,7 +92,7 @@
                     "tags": "",
                     "day":"Rabu",
                     "available":1,
-                    "intro": "Nasi kebuli DapoerFitri dimasak dengan berbagai bumbu rempah yang khas sehingga menghasilkan rasa yang autentik. Nasi kebuli ini juga dilengkapi dengan ayam goreng yang empuk dan juicy, acar, sambal dan sayuran segar.",
+                    "intro": "Nasi yang diolah susu dan bumbu khas Timur, dilengkapi dengan ayam goreng bumbu rempah, Acar, Emping dan sambal..",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
                         "imgix_url": "nasbul.jpeg"
@@ -105,12 +105,26 @@
                     "tags": "",
                     "day":"Rabu",
                     "available":1,
-                    "intro": "Keunikan nasi uduk DapoerFitri terletak pada racikan bumbunya yang tak main-main. Aroma wangi dari bumbu rempah dan gurihnya santan kelapa juga langsung terasa di lidah. Pilihan lauk yang ditawarkan juga banyak.",
+                    "intro": "Nasi yang diolah bersama santan, pandan, daun salam dan bumbu khas dapoerfitri, wangi nasi nya bikin laperrr, disajikan dengan orek tempe, bihun goreng dan tambahan sesuai selera yaitu ayam goreng lengkuas atau telor balado, bisa juga lengkap,. Plus kerupuk dan sambal.",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
                         "imgix_url": "nasduk.jpg"
                     }
+                },
+                {
+                    "title": "Nasi Ijo",
+                    "slug": "nasiijo",
+                    "price": "Rp25k",
+                    "tags": "",
+                    "day":"Rabu",
+                    "available":1,
+                    "intro": "Nasi yang diolah bersama santan, pandan dan daun suji dan bumbu khas dapoerfitri, wangi nasi nya bikin laperrr, disajikan dengan orek tempe, bihun goreng dan tambahan sesuai selera yaitu ayam goreng lengkuas atau telor balado, bisa juga lengkap,. Plus kerupuk dan sambal.",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/f35f57d0-b73e-11ec-a642-7195085ee56f-gallery03.png",
+                        "imgix_url": "nasiijo.jpg"
+                    }
                 }
+
             ],
             "schedule":
                 {
@@ -203,7 +217,7 @@
                     "slug": "liwet",
                     "price": "Rp20k",
                     "tags": "",
-                    "intro": "Nasi Liwet adalah salah satu jenis makanan khas Solo. Nasi Liwet memiliki cita rasa gurih dan lezat karena dimasak dengan kaldu ayam. Nasi liwet disajikan dengan sayur labu siam dan telur ayam rebus serta kumut (santan kelapa kental) dalam pincuk (daun pisang).",
+                    "intro": "Menu nasi liwet khas Jawa Barat ini biasanya diberi topping saat disajikan, yaitu petai, ikan teri, Cabai setan. Nasi nya sndiri diolah dengan sedikit minyak, bawang merah yang sudah digoreng, terimedan yang sudah digoreng kering dan rempah lainnya, sehingga rasanya gurih dan aromanya mengundang selera. Dapoerfitri sajikan dengan menu tambahan bakwan goreng, cumi asin Cabe ijo, kerupuk dan sambel yang maknyoss...",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/a818dda0-b73e-11ec-a642-7195085ee56f-gallery01.png",
                         "imgix_url": "nasiliwet.png"
@@ -214,7 +228,7 @@
                     "slug": "titi",
                     "price": "Rp50k",
                     "tags": "",
-                    "intro": "Mie Titi merupakan makanan khas Makassar dengan bahan dasar mie yang disiram dengan kuah kental. Sajian khas Makassar ini mirip dengan ifumie, hanya saja mie yang digunakan sangat khas, yaitu mie kering dan berukuran kecil. Rasanya lezat dan cara penyajiannya yang cukup praktis, sehingga cocok dijadikan untuk santapan anda.",
+                    "intro": "Makanan khas makassar, dapoerfitri ganti mie nya dengan mie telor yang digoreng garing dengan kuah kental gurih isinya bakso sapi, bakso ikan, Hati ampela, otak2, dada ayam, caisin dan sawi putih + perasan jeruk nipis dan sambel",
                     "picture": {
                         "url": "https://cdn.cosmicjs.com/c4cfa280-b73e-11ec-a642-7195085ee56f-gallery02.png",
                         "imgix_url": "mititi.jpg"
