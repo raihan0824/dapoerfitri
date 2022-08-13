@@ -73,6 +73,17 @@
                     }
                 },
                 {
+                    "title": "Nasi Liwet",
+                    "slug": "liwet",
+                    "price": "Rp20k",
+                    "tags": "",
+                    "intro": "Menu nasi liwet khas Jawa Barat ini biasanya diberi topping saat disajikan, yaitu petai, ikan teri, Cabai setan. Nasi nya sndiri diolah dengan sedikit minyak, bawang merah yang sudah digoreng, terimedan yang sudah digoreng kering dan rempah lainnya, sehingga rasanya gurih dan aromanya mengundang selera. Dapoerfitri sajikan dengan menu tambahan bakwan goreng, cumi asin Cabe ijo, kerupuk dan sambel yang maknyoss...",
+                    "picture": {
+                        "url": "https://cdn.cosmicjs.com/a818dda0-b73e-11ec-a642-7195085ee56f-gallery01.png",
+                        "imgix_url": "nasiliwet.png"
+                    }
+                },
+                {
                     "title": "Mie Titi",
                     "slug": "titi",
                     "price": "Rp50k",
@@ -262,17 +273,6 @@
             ],
             "title": "Special Menu",
             "menu": [
-                {
-                    "title": "Nasi Liwet",
-                    "slug": "liwet",
-                    "price": "Rp20k",
-                    "tags": "",
-                    "intro": "Menu nasi liwet khas Jawa Barat ini biasanya diberi topping saat disajikan, yaitu petai, ikan teri, Cabai setan. Nasi nya sndiri diolah dengan sedikit minyak, bawang merah yang sudah digoreng, terimedan yang sudah digoreng kering dan rempah lainnya, sehingga rasanya gurih dan aromanya mengundang selera. Dapoerfitri sajikan dengan menu tambahan bakwan goreng, cumi asin Cabe ijo, kerupuk dan sambel yang maknyoss...",
-                    "picture": {
-                        "url": "https://cdn.cosmicjs.com/a818dda0-b73e-11ec-a642-7195085ee56f-gallery01.png",
-                        "imgix_url": "nasiliwet.png"
-                    }
-                },
                 {
                     "title": "Laksa Singapore",
                     "slug": "laksa",
