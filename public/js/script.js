@@ -17,7 +17,8 @@ function gotowhatsapp () {
         /// get menu from checkboxes
         selected_menu=$('input[type=checkbox]:checked').map(function(_, el) {
             return $(el).val();
-        }).get().join(" , ");
+        }).get()
+        .join(" , ");
 
         /* Call Input Form */
         var 

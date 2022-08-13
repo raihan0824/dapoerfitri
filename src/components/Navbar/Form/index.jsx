@@ -100,10 +100,10 @@ const Form = ({ info,onClose, children, title }) => {
                                                 <div style={{margin:"10px"}}/>
                                                 {special_menu_list?.map(menu => (
                                                     <ul key={menu}>
-                                                    <input value={menu} name="checkbox" type="checkbox" className={styles.radio_class}/>
-                                                    <label className={styles.label} htmlFor="radio">
-                                                        {menu}
-                                                    </label>
+                                                        <input value={menu} name="checkbox" type="checkbox" className={styles.radio_class} />
+                                                        <label className={styles.label}>
+                                                            {menu}
+                                                        </label>
                                                     </ul>
                                                 ))}
                                                 <div style={{ margin: "5px" }} />

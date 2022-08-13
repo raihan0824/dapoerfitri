@@ -14,12 +14,15 @@ function gotowhatsapp () {
         var walink = 'whatsapp://send';
     }
 
-    // if ("" != input_blanter.value) {
+        /// get menu from checkboxes
+        selected_menu=$('input[type=checkbox]:checked').map(function(_, el) {
+            return $(el).val();
+        }).get()
+        .join(" , ");
 
         /* Call Input Form */
         var 
-            // input_select1 = $("#wa_select :selected").text(),
-            input_select1 = $("input[type='radio'][name='radio']:checked").val(),
+            input_select1 = selected_menu,
             input_name1 = $("#wa_name").val(),
             input_email1 = $("#wa_email").val(),
             input_number1 = $("#wa_number").val(),
@@ -38,7 +41,6 @@ function gotowhatsapp () {
 
         /* Whatsapp Window Open */
         window.open(blanter_whatsapp, '_blank');
-    // }
 };
 
 function div_hide(){
