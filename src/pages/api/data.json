@@ -206,10 +206,9 @@
                     "schedule_menu": [
                         {"day":"Senin","menu":["Nasi Kuning"]},
                         {"day":"Selasa","menu":["Nasi Uduk"]},
-                        {"day":"Rabu","menu":"Nasi Liwet | Nasi Goreng"},
-                        {"day":"Kamis","menu":"Nasi Kuning | Nasi Liwet"},
+                        {"day":"Rabu","menu":["Nasi Liwet | Nasi Goreng"]},
+                        {"day":"Kamis","menu":["Nasi Kuning | Nasi Liwet"]},
                         {"day":"Jumat","menu":["Nasi Kebuli"]}
-
                     ]
                     
                 }
